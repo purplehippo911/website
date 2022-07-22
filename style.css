@@ -17,10 +17,25 @@ body {
     font-size:1.5em;    
 }
 
+main {
+    padding:2rem;
+}
+
+section {
+    width:80%;
+    background:var(--black);
+    padding:0 100px;
+    margin:0 auto;
+}
+
 .container {
     width: 100%;
-    max-width:1400px;
     margin:0 auto;
+}
+
+.container-main {
+    max-width:600px;
+    color:white;
 }
 
 .row {
@@ -32,6 +47,7 @@ body {
     display:grid;
     gap:2rem;
     justify-items:center;
+    align-items: center;
 }
 
 img {
@@ -40,6 +56,7 @@ img {
 }
 
 .hero__title {
+    justify-self:center;
     margin-top:0;
     grid-column:1 / -1;
 }
@@ -48,7 +65,6 @@ header {
     width:100%;
     padding:2rem;
     background:var(--black);
-    /* position:fixed; */
 }
 
 .logo {
@@ -88,10 +104,12 @@ nav {
 .gallery {
     display:grid;
     gap:2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
 }
 
 .hero__item {
+    display:grid;
     text-decoration: none;
     color:var(--yellow);
 }
@@ -107,8 +125,6 @@ nav {
 .hero__item > span {
     margin:0 auto;
 }
-
-
 
 .Github {
     max-width:50%;
