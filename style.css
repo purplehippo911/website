@@ -11,15 +11,10 @@
 
 
 body {
-    font-size:1.5em;    
-    font-family: 'Lato', sans-serif;
     margin:0;
-}
-
-.hero, .footer {
-    width:100%;
-    padding:3rem;
-    margin-bottom:15rem;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+    font-size:1.5em;    
 }
 
 .container {
@@ -28,9 +23,9 @@ body {
     margin:0 auto;
 }
 
-img {
-    max-width:100%;
-    height:100%;
+.row {
+    display:flex;
+    justify-content:space-between;
 }
 
 .grid {
@@ -39,36 +34,82 @@ img {
     justify-items:center;
 }
 
+img {
+    max-width:100%;
+    height:100%;
+}
+
+.hero__title {
+    margin-top:0;
+    grid-column:1 / -1;
+}
+
+header {
+    width:100%;
+    padding:2rem;
+    background:var(--black);
+    /* position:fixed; */
+}
+
+.logo {
+    margin:auto;
+    text-decoration: none;
+}
+
+nav {
+    margin:0 auto;
+}
+
+.nav__list {
+    list-style: none;
+    display:flex;
+    gap:5rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:var(--yellow);
+}
+
+.nav__link:hover, .nav__link:focus {
+    color:white;
+}
+
+.hero, .footer {
+    width:100%;
+    padding:3rem;
+    margin-bottom:5rem;
+}
+
+.footer {
+    margin-bottom:0;
+}
+
 .gallery {
     display:grid;
     gap:2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-a {
-    display:grid;
+.hero__item {
     text-decoration: none;
     color:var(--yellow);
 }
 
-a > img {
+.hero__item > img {
     border:5px solid var(--black);
 }
 
-a > img:hover {
+.hero__item > img:hover {
     border:5px solid var(--yellow);
 }
 
-a > span {
+.hero__item > span {
     margin:0 auto;
 }
 
 
-.hero__title {
-    grid-column:1 / -1;
-}
 
 .Github {
     max-width:50%;
-
 }
