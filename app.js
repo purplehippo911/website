@@ -3,6 +3,7 @@
       const translation = document.querySelector(".text > .title");
       const divFlag = document.querySelector(".text span");
       const submitBtn = document.querySelector(".hero .btn");
+      const adviceDiv = document.querySelector(".quote__item");
       let lastGreeting;
 
       const greetings = [
@@ -50,5 +51,19 @@
         document.querySelector(".number").textContent = `#${random}`;
       }
 
+      const fetchAdvice = async () => {
+        try {
+          const url = "https://api.adviceslip.com/advice";
+          const res = await fetch(url);
+          const data = await res.json();
+          const { advice } = data.slip;
+          adviceDiv.textContent = ` ${advice}`;
+          return data;
+        }catch(err) {
+          console.error(err);
+        }
+      }
+
       window.addEventListener("load", getTranslation);
+      window.addEventListener("load", fetchAdvice);
       submitBtn.addEventListener("click", getTranslation);

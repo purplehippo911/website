@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");  
+
 :root {
     --yellow: #ffc600;
     --black: #272727;
@@ -39,7 +41,15 @@ section {
 
 a {
     text-decoration: none;
-}
+} 
+
+ .logo::before {
+    content: "\f135";
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: inherit;
+ } 
 
 .container {
     width: 100%;
@@ -48,8 +58,9 @@ a {
 
 .container-main {
     width:80%;
-    max-width:800px;
+    max-width:900px;
     color:white;
+    align-self:center;
 }
 
 .row {
@@ -57,15 +68,28 @@ a {
     justify-content:space-between;
 }
 
+.col {
+    width:100%;
+    margin-left:auto;
+}
+
 .grid {
     display:grid;
     gap:2rem;
     justify-items:center;
     align-items: center;
+    align-content:center;
+    justify-content: center;
 }
 
-.text.grid {
-    grid-auto-flow: column;
+.text {
+    width:100%;
+    display:grid;
+    gap:2rem;
+    grid-template-columns: repeat(3, auto);
+    justify-items:start;
+    align-items: center;
+    justify-content:start;
 }
 
 img {
@@ -86,8 +110,20 @@ header {
 }
 
 .logo {
+    width:100%;
     margin:auto;
     text-decoration: none;
+    color:var(--white);
+}
+
+.quote {
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    width:100%;
+    padding:.5rem;
+    color:white;
+    background:var(--yellow);
 }
 
 nav {
@@ -95,9 +131,14 @@ nav {
 }
 
 .nav__list {
+    width:100%;
     list-style: none;
     display:flex;
     gap:5rem;
+}
+
+.nav__item {
+    width:100%;
 }
 
 .nav__link {
@@ -146,4 +187,11 @@ nav {
 
 .Github {
     max-width:50%;
+}
+
+@media(min-width:1000px) {
+
+    .nav__list {
+        gap:15rem;
+    }
 }
