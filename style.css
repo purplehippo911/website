@@ -24,7 +24,6 @@ main {
 }
 
 section {
-    width:80%;
     padding:0 100px;
     margin:0 auto;
     margin-top:2rem;
@@ -171,13 +170,16 @@ nav {
     border-radius:12px 12px 12px 12px;
 }
 
-.hero, .footer, .swiper-section {
+.hero,
+.main, 
+.footer, 
+section {
     width:100%;
     padding:3rem;
-    margin-bottom:5rem;
+    margin-bottom:7rem;
 }
 
-.swiper-section {
+section {
     width:80%;
 }
 
@@ -206,7 +208,7 @@ nav {
     border:5px solid var(--yellow);
 }
 
-.hero__item > span {
+span, em {
     margin:0 auto;
 }
 
