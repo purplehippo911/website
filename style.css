@@ -161,13 +161,24 @@ nav {
 }
 
 .swiper-slide {
-    width:80%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
 }
 
-.hero, .footer {
+.swiper-slide > img {
+    border-radius:12px 12px 12px 12px;
+}
+
+.hero, .footer, .swiper-section {
     width:100%;
     padding:3rem;
     margin-bottom:5rem;
+}
+
+.swiper-section {
+    width:80%;
 }
 
 .footer {
