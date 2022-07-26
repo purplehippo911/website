@@ -30,25 +30,12 @@ section {
     background:var(--black);
 }
 
-.greeting-section {
-    background:var(--yellow);
-    color:var(--black);
-    border:5px solid var(--black);
-    width:50%;
-    padding:.5rem;
-}
+
 
 a {
     text-decoration: none;
 } 
 
- .logo::before {
-    content: "\f135";
-    font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: 900;
-    text-decoration: inherit;
- } 
 
 .container {
     width: 100%;
@@ -108,22 +95,22 @@ header {
     background:var(--black);
 }
 
-.logo {
-    width:100%;
+.logo, .hamburger {
+    width:20%;
     margin:auto;
+    margin-left:auto;
     text-decoration: none;
     color:var(--white);
 }
 
-.quote {
-    display:flex;
-    justify-content:center;
-    text-align: center;
-    width:100%;
-    padding:.5rem;
-    color:white;
-    background:var(--yellow);
+.logo::before {
+   content: "\f135";
+   font-family: "Font Awesome 5 Free";
+   font-style: normal;
+   font-weight: 900;
+   text-decoration: inherit;
 }
+
 
 nav {
     margin:0 auto;
@@ -140,13 +127,69 @@ nav {
     width:100%;
 }
 
-.nav__link {
+.nav__link, .dropdown-content a {
     text-decoration: none;
     color:var(--yellow);
 }
 
 .nav__link:hover, .nav__link:focus {
     color:white;
+}
+
+.dropdown {
+    float:left;
+    margin-right:auto;
+    overflow: hidden;
+    display:none;
+    transition: 0.5s ease-in-out;
+}
+
+
+.dropdown-content {
+    display:flex;
+    flex-direction:column;
+    background-color: #f9f9f9;
+    margin:0 auto;
+    min-width: 160px;
+    padding:2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    margin:auto;
+}
+
+.dropdown a:hover {
+    color:var(--black);
+}
+
+.hamburger {
+    color:var(--yellow);
+    max-width:45px;
+    margin:auto;
+    display:none;
+    transition:0.5s ease-in-out;
+}
+
+.quote {
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    width:100%;
+    padding:.5rem;
+    margin-top:2rem;
+    color:white;
+    background:var(--yellow);
+}
+
+
+.greeting-section {
+    background:var(--yellow);
+    color:var(--black);
+    border:5px solid var(--black);
+    width:70%;
+    padding:1rem;
 }
 
 .swiper {
@@ -187,6 +230,10 @@ section {
     margin-bottom:0;
 }
 
+figure {
+    margin:0;
+}
+
 .gallery {
     display:grid;
     gap:2rem;
@@ -221,4 +268,29 @@ span, em {
     .nav__list {
         gap:15rem;
     }
+}
+
+@media(max-width:600px) {
+
+    header {
+        background:var(--yellow);
+    }
+
+    .quote {
+        background:white;
+        color:var(--yellow);
+    }
+
+    .nav {
+        display:none;
+    }
+
+    .dropdown.active {
+        display:block;
+    }
+
+    .hamburger {
+        display:block;
+    }
+    
 }
