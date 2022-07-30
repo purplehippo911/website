@@ -24,6 +24,7 @@
     "gulp-imagemin": "^8.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-uglify-es": "^3.0.0",
-    "terser": "^5.14.2"
+    "terser": "^5.14.2",
+    "semver-regex": ">=3.1.4"
   }
 }
