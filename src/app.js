@@ -1,4 +1,4 @@
-const adviceDiv = document.querySelector(".quote__item");
+const adviceDiv = document.querySelector(".quote");
 const hamburger = document.querySelector(".hamburger");
 const dropdown = document.querySelector(".dropdown");
 

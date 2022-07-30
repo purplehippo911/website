@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="shortcut icon"
-      href="images/rocket-solid.svg"
+      href="assets/images/rocket-solid.svg"
       type="image/x-icon"
     />
   </head>
@@ -44,11 +44,11 @@
           </ul>
         </nav>
         <a class="hamburger" href="#">
-          <img src="images/burger-solid.svg" alt="a burger" />
+          <img src="assets/images/burger-solid.svg" alt="a burger" />
         </a>
       </div>
-      <div class="quote">
-        <em class="quote__item"></em>
+      <div class="quoteDiv">
+        <em class="quote"></em>
       </div>
     </header>
 
@@ -74,7 +74,10 @@
             go by as purplehippo911, in the coding world.
           </p>
           <figure class="main__picture">
-            <img src="images/shyguy.jpg" alt="my github profile picture" />
+            <img
+              src="assets/images/shyguy.jpg"
+              alt="my github profile picture"
+            />
           </figure>
         </div>
       </div>
@@ -127,12 +130,13 @@
     <footer class="footer">
       <div class="container grid">
         <a href="https://github.com/purplehippo911/" class="hero__item Github">
-          <img src="images/github.png" alt="Check me out on Github" />
+          <img src="assets/images/github.png" alt="Check me out on Github" />
           <em>Don't forget to check me out on github </em>
         </a>
       </div>
     </footer>
 
+    <script src="assets/app.js"></script>
     <script>
       // Where I got the greetings from
       // https://www.babbel.com/en/magazine/how-to-say-hello-in-10-different-languages
@@ -174,6 +178,7 @@
         { text: " Chào ", flag: "🇻🇳 " }, // vietnamise
         { text: " Moi  ", flag: "🇫🇮  " }, // finnish
         { text: " Helo ", flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿  " }, // Welsh
+        { text: " Selamat pagi ", flag: "🏴󠁧󠁢󠁷󠁬󠁳🇲🇾 " }, // malaysian
         { text: " Sawubona ", flag: "🇿🇦  " }, // Zulu
       ];
 
@@ -199,6 +204,5 @@
       window.addEventListener("load", getTranslation);
       submitBtn.addEventListener("click", getTranslation);
     </script>
-    <script src="app.js"></script>
   </body>
 </html>
