@@ -12,13 +12,13 @@ async function message() {
 async function imageMin() {
   gulp.src('src/images/*')
       .pipe(imagemin())
-      .pipe(gulp.dest('assets/images'));
+      .pipe(gulp.dest('dist/images'));
 };
 
 async function screenshotsMin() {
     gulp.src('src/screenshots/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('assets/screenshots'));
+        .pipe(gulp.dest('dist/screenshots'));
 };
 
 // minify and prefix css
@@ -26,18 +26,19 @@ async function cssMinify() {
     gulp.src('src/*.css')
         .pipe(prefix())
         .pipe(minify())
-        .pipe(gulp.dest('assets'));
+        .pipe(gulp.dest('dist'));
 };
 
 // minify js
 async function jsMinify() {
     gulp.src('src/*.js')
         .pipe(terser())
-        .pipe(gulp.dest('assets'));
+        .pipe(gulp.dest('dist'));
 };
 
 async function watchTask() {
     gulp.watch('src/images/*', imageMin);
+    gulp.watch('src/screenshots/*', screenshotsMin);
     gulp.watch('src/*.css', cssMinify);
     gulp.watch('src/*.js', jsMinify);
 };
