@@ -1,58 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My website</title>
-    <link rel="stylesheet" href="dist/style.css" />
-    <link
-      rel="shortcut icon"
-      href="dist/images/rocket-solid.svg"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container container-main row">
-        <a class="logo" href="index.html">
-          <i class=""></i>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a
-            ><a href="gallery.html">Gallery</a>
-          </div>
-        </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">
-                <span>Home</span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="gallery.html" class="nav__link">
-                <span>Gallery</span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="portfolio.html" class="nav__link">
-                <span>Portfolio</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a class="hamburger" href="#">
-          <img src="dist/images/burger-solid.svg" alt="a burger" />
-        </a>
-      </div>
-      <div class="quote">
-        <em class="quote__item"></em>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container grid">
+const Portfolio = () => {
+    return ( 
+      <main class="main">
+            <h2>Portfolio page</h2>
+        <div class="container grid">
         <h2 class="hero__title">My projects</h2>
         <div class="gallery">
           <a
@@ -154,14 +104,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <div class="container grid">
-        <a href="https://github.com/purplehippo911/" class="hero__item Github">
-          <img src="dist/images/github.png" alt="Check me out on Github" />
-          <em>Don't forget to check me out on github </em>
-        </a>
-      </div>
-    </footer>
-    <script src="dist/app.js"></script>
-  </body>
-</html>
+     );
+}
+ 
+export default Portfolio;
