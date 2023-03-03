@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 
 const Advice = () => {
      
-    const adviceDiv = document.querySelector(".quote");
-    const hamburger = document.querySelector(".hamburger");
-    const dropdown = document.querySelector(".dropdown");
     const [adviceSlip, setAdviceSlip] = useState(null);
     const [isPending, setIsPending] = useState(true);
     
@@ -23,9 +20,9 @@ const Advice = () => {
     })
 
     return ( 
-        <div class="quoteDiv">
+        <div className="quoteDiv">
          { isPending && <div>Loading advice...</div>  }
-         { adviceSlip && <em class="quote">{adviceSlip}</em>}
+         { adviceSlip && <em className="quote">{adviceSlip}</em>}
         </div>
 
      );

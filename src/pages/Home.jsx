@@ -15,7 +15,7 @@ const Home = () => {
                     go by as purplehippo911, in the coding world.
                 </p>
                 <figure class="main__picture">
-                    <img src="dist/images/shyguy.jpg" alt="my github profile picture" />
+                    <img src="/src/assets/images/shyguy.jpg" alt="my github profile picture" />
                 </figure>
                 </div>
             </div>

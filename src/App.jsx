@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Portfolio from './pages/Portfolio';
+import NotFound from './pages/NotFound';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
           <Route index element={ <Home/> }/>
           <Route path="/gallery" element={ <Gallery/> }/>
           <Route path="/portfolio" element={ <Portfolio/> }/>
-          <Route path="*" element={() => <h2>404 Not Found </h2>} />
+          <Route path="*" element={ <NotFound/> } />
         </Routes>
 
         <Footer/>

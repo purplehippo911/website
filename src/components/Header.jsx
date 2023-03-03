@@ -37,7 +37,7 @@ import Advice from "./Advice";
             </ul>
           </nav>
           <a className="hamburger" onClick={() => dropdown.classList.toggle("active")}>
-            <img src="../assets/images/burger-solid.svg" alt="a burger" />
+            <img src="/src/assets/images/burger-solid.svg" alt="a burger" />
           </a>
         </div>
         
