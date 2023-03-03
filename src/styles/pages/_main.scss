@@ -1,0 +1,57 @@
+@import "../utils/variables";
+
+
+.greeting-section {
+    background:$Yellow;
+    color:$Black;
+    border:5px solid $Black;
+    width:100%;
+    padding:1rem;
+    @media screen and (max-width:800px){
+        
+    .text {
+        grid-template-columns:100%;
+        grid-template-rows:repeat(2, 2rem);
+        justify-items:center;
+    }
+    .title {
+        text-align:center;
+    }
+        
+    }
+}
+
+.container--main {
+    width:80%;
+    max-width:900px;
+    color:$White;
+    align-self:center;
+    text-align: center;
+}
+
+.main__picture {
+    width:100%;
+    margin-left:2rem;
+}
+
+img[alt="my profile picture"] {
+    height:unset;
+}
+
+@media screen and (max-width:800px){
+    .main-section {
+        .row {
+            display:grid;
+            grid-template-columns:100%;
+            grid-template-rows:2fr 1fr;
+            gap:2rem;
+        }
+        .main__picture{
+            margin:0rem;
+            img[alt="my profile picture"] {
+                max-height:100%;
+            }
+        }
+
+    }
+}

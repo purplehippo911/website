@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 import Advice from "./Advice";
+import "../styles/style.scss";
+
 
     const Header = () => {
       const hamburger = document.querySelector(".hamburger");

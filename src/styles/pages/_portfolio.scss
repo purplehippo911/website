@@ -1,0 +1,22 @@
+@import "../utils/variables";
+
+.hero__title {
+    justify-self:center;
+    margin-top:0;
+    grid-column:1 / -1;
+}
+
+
+.hero__item {
+    display:grid;
+    text-decoration: none;
+    color:$Yellow;
+}
+
+.hero__item > img {
+    border:5px solid $Black;
+}
+
+.hero__item > img:hover {
+    border:5px solid $Yellow;
+}

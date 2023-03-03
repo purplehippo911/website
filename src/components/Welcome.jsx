@@ -4,9 +4,7 @@ const Welcome = () => {
     // Where I got the greetings from
       // https://www.babbel.com/en/magazine/how-to-say-hello-in-10-different-languages
       const [translation, setTranslation] = useState('');
-      const [id, setId] = useState(null);
       const [flag, setFlag] = useState('');
-      const submitBtn = document.querySelector(".greeting__btn");
       let lastGreeting;
 
       const greetings = [
@@ -47,38 +45,29 @@ const Welcome = () => {
       ];
 
       function getTranslation() {
-          const random = Math.floor(Math.random() * greetings.length);
-          const greeting = greetings[random];
-          setTranslation(greeting.text);
-          // to avoid the same greeting reaparing twice in a row
-          if (greeting === lastGreeting) {
-            return getTranslation();
-          }
-          lastGreeting = greeting;
-          // the flags should attach to the right greeting
-          const flag = greeting.flag;
-          setFlag(flag);
-  
-          setId(random);
+        
         }
 
     useEffect(() => {
-        getTranslation();
-    })
+        const random = Math.floor(Math.random() * greetings.length);
+        const greeting = greetings[random];
+        setTranslation(greeting.text);
+        // to avoid the same greeting reaparing twice in a row
+        
+        // the flags should attach to the right greeting
+        const flag = greeting.flag;
+        setFlag(flag);
+    }, [])
 
     return ( 
-        <section class="greeting-section">
-            <div class="container container-main grid">
-                <div class="text">
-                <h2 class="title"> {translation} </h2>
-                <a href="#" class="flags">
-                    <strong class="flag">{flag} </strong>
+            <div className="greeting-section">
+              <div className="text">
+                <h2 className="title"> {translation} </h2>
+                <a href="#" className="flags">
+                    <strong className="flag">{flag} </strong>
                 </a>
-                <p class="number">{id}</p>
-                </div>
-                <button class="greeting__btn" onClick={getTranslation}>Click Me</button>
+              </div>
             </div>
-       </section>
      );
 }
  

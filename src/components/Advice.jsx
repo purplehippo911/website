@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import "../styles/style.scss";
+
 const Advice = () => {
      
     const [adviceSlip, setAdviceSlip] = useState(null);
