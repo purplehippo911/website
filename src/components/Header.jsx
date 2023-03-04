@@ -15,7 +15,7 @@ import "../styles/style.scss";
           <div className="dropdown">
             <div className="dropdown-content">
               <Link to="/">Home</Link>
-              <Link to="/porfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
               <Link to="/gallery">Gallery</Link>
             </div>
           </div>

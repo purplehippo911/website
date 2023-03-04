@@ -1,3 +1,5 @@
+import "../styles/pages/_gallery";
+
 const Gallery = () => {
 
     const swiper = new Swiper(".swiper", {

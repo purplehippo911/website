@@ -1,3 +1,4 @@
+import "../styles/pages/_portfolio";
 const Portfolio = () => {
     return ( 
       <main class="main">
@@ -8,13 +9,13 @@ const Portfolio = () => {
             href="https://purplehippo911.github.io/flexbox/"
             class="hero__item flexbox"
           >
-            <img src="/src/assets/screenshots/flexForm.png" alt="flexbox" />
+            <img src="../assets/screenshots/flexForm.png" alt="flexbox" />
           </a>
           <a
             href="https://purplehippo911.github.io/SignUp_form/"
             class="hero__item signUp"
           >
-            <img src="/src/assets/screenshots/singUP.jpg" alt="signUp"
+            <img src="../assets/screenshots/singUP.jpg" alt="signUp"
           /></a>
           <a
             href="https://purplehippo911.github.io/pricingComponent"
