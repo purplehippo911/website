@@ -32,7 +32,7 @@ import "../styles/style.scss";
                 </Link>
               </li>
               <li className="nav__item">
-                <Link to="/porfolio" className="nav__link">
+                <Link to="/portfolio" className="nav__link">
                   <span>Portfolio</span>
                 </Link>
               </li>
