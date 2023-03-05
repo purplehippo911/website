@@ -32,26 +32,26 @@
 .main__picture {
     width:100%;
     margin-left:2rem;
+    text-align:center;
 }
 
 img[alt="my profile picture"] {
-    height:unset;
+    border-radius:2rem;
+    box-shadow:10px 12px anitqueWwite;
 }
 
-@media screen and (max-width:800px){
-    .main-section {
+
+.first-section {
+    @media screen and (max-width:800px){
         .row {
             display:grid;
             grid-template-columns:100%;
-            grid-template-rows:2fr 1fr;
+            grid-template-rows:2fr auto;
             gap:2rem;
         }
         .main__picture{
             margin:0rem;
-            img[alt="my profile picture"] {
-                max-height:100%;
-            }
         }
-
     }
+
 }

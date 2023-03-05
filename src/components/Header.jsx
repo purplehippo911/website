@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Advice from "./Advice";
-import "../styles/style.scss";
+import "../styles/components/_header";
 
 
     const Header = () => {
@@ -15,7 +15,7 @@ import "../styles/style.scss";
           <div className="dropdown">
             <div className="dropdown-content">
               <Link to="/">Home</Link>
-              <Link to="/porfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
               <Link to="/gallery">Gallery</Link>
             </div>
           </div>
@@ -32,7 +32,7 @@ import "../styles/style.scss";
                 </Link>
               </li>
               <li className="nav__item">
-                <Link to="/porfolio" className="nav__link">
+                <Link to="/portfolio" className="nav__link">
                   <span>Portfolio</span>
                 </Link>
               </li>
