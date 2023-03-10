@@ -1,4 +1,4 @@
-﻿# Website - My very own fricking website
+﻿# Website - My very own website
 
 ![top section](/src/assets/screenshots/website.png)
 
