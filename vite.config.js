@@ -36,5 +36,5 @@ export default defineConfig({
       },
     },
   },
-  base: '/vite-deploy-demo/'
+  base: '/website/'
 })
