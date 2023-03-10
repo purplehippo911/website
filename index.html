@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My website</title>
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="shortcut icon"
-      href="dist/images/rocket-solid.svg"
+      href="assets/images/rocket-solid.svg"
       type="image/x-icon"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -44,7 +46,7 @@
           </ul>
         </nav>
         <a class="hamburger" href="#">
-          <img src="dist/images/burger-solid.svg" alt="a burger" />
+          <img src="assets/images/burger-solid.svg" alt="a burger" />
         </a>
       </div>
       <div class="quoteDiv">
@@ -74,7 +76,10 @@
             go by as purplehippo911, in the coding world.
           </p>
           <figure class="main__picture">
-            <img src="dist/images/shyguy.jpg" alt="my github profile picture" />
+            <img
+              src="assets/images/shyguy.jpg"
+              alt="my github profile picture"
+            />
           </figure>
         </div>
       </div>
@@ -127,13 +132,13 @@
     <footer class="footer">
       <div class="container grid">
         <a href="https://github.com/purplehippo911/" class="hero__item Github">
-          <img src="dist/images/github.png" alt="Check me out on Github" />
+          <img src="assets/images/github.png" alt="Check me out on Github" />
           <em>Don't forget to check me out on github </em>
         </a>
       </div>
     </footer>
 
-    <script src="dist/app.js"></script>
+    <script src="assets/app.js"></script>
     <script>
       // Where I got the greetings from
       // https://www.babbel.com/en/magazine/how-to-say-hello-in-10-different-languages
@@ -175,7 +180,7 @@
         { text: " Chào ", flag: "🇻🇳 " }, // vietnamise
         { text: " Moi  ", flag: "🇫🇮  " }, // finnish
         { text: " Helo ", flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿  " }, // Welsh
-        { text: " Selamat pagi ", flag: "🇲🇾 " }, // malaysian
+        { text: " Selamat pagi ", flag: "🏴󠁧󠁢󠁷󠁬󠁳🇲🇾 " }, // malaysian
         { text: " Sawubona ", flag: "🇿🇦  " }, // Zulu
       ];
 
