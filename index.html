@@ -4,16 +4,207 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Purplehippo's website</title>
-    <link rel="shortcut icon" type="image/x-icon" />
+    <title>My website</title>
+    <link rel="stylesheet" href="assets/style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      rel="shortcut icon"
+      href="assets/images/rocket-solid.svg"
+      type="image/x-icon"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <div class="container container-main row">
+        <a class="logo" href="index.html">
+          <i class=""></i>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a
+            ><a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="gallery.html" class="nav__link">
+                <span>Gallery</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="portfolio.html" class="nav__link">
+                <span>Portfolio</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="hamburger" href="#">
+          <img src="assets/images/burger-solid.svg" alt="a burger" />
+        </a>
+      </div>
+      <div class="quoteDiv">
+        <em class="quote"></em>
+      </div>
+    </header>
+
+    <section class="greeting-section">
+      <div class="container container-main grid">
+        <div class="text">
+          <h2 class="title"></h2>
+          <a href="#" class="flags">
+            <strong class="flag"> </strong>
+          </a>
+          <p class="number"></p>
+        </div>
+        <button class="greeting__btn">Click Me</button>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="container container-main row">
+        <div class="col">
+          <h2 clas="main__title">Who am I?</h2>
+          <p class="main__info">
+            Random norwegian teenager who loves to code in his freetime. I know
+            some HTML, CSS and I'm currently learning more about Javascript. I
+            go by as purplehippo911, in the coding world.
+          </p>
+          <figure class="main__picture">
+            <img
+              src="assets/images/shyguy.jpg"
+              alt="my github profile picture"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-section">
+      <div class="container container-main row">
+        <div class="col">
+          <h2 class="second__title">Why did I learn to code?</h2>
+          <p class="second__info">
+            I remember that I always have had a passion for technology when I
+            was younger. I was just facinated by it. And in 2019, or something I
+            started with learning the basics of python. Then I went over to
+            learning HTML and CSS, and at the same time falling in love with
+            frontend. It was of course difficult in the start, and I gave up
+            multiple times on the way. After many months of trying and failing,
+            have I finally started on my own website.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="third-section">
+      <div class="container container-main row">
+        <div class="col">
+          <h2 class="third__title">What am I doing with my life?</h2>
+          <p class="third__info">
+            I dunno. I also like to read novels and comics, take photos of
+            nature, cook food, especially from foreign cuisines. Play games like
+            sky on my nintendo switch, and of course watch youtube shorts or a
+            netflix series called dark.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fourth-section">
+      <div class="container container-main row">
+        <div class="col">
+          <h2 class="fourth__title">Where can I learn more about you?</h2>
+          <p class="fourth__title">
+            Well, you can check out my projects by checking my portfolio. You'll
+            find it on the navigation bar. The best way I can improve is by
+            continously getting some feedback.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container grid">
+        <a href="https://github.com/purplehippo911/" class="hero__item Github">
+          <img src="assets/images/github.png" alt="Check me out on Github" />
+          <em>Don't forget to check me out on github </em>
+        </a>
+      </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>
+      // Where I got the greetings from
+      // https://www.babbel.com/en/magazine/how-to-say-hello-in-10-different-languages
+      const translation = document.querySelector(".text > .title");
+      const divFlag = document.querySelector(".flag");
+      const submitBtn = document.querySelector(".greeting__btn");
+      let lastGreeting;
+
+      const greetings = [
+        { text: "Hi", flag: "🇬🇧 " }, // english
+        { text: " Hei", flag: "🇳🇴 " }, // norsk
+        { text: "Bonjour", flag: "🇫🇷 " }, // french
+        { text: "Hola", flag: "🇪🇸 " }, // spanish
+        { text: "Privet", flag: "🇷🇺 " }, // russian
+        { text: " Ni hao", flag: "🇨🇳 " }, // chinese
+        { text: " Ciao", flag: "🇮🇹 " }, // italian
+        { text: " Konnichiwa", flag: "🇯🇵 " }, // japanese
+        { text: "Guten Tag", flag: "🇩🇪 " }, // german
+        { text: " Olá", flag: "🇵🇹 " }, // portuguese
+        { text: " Anyong haseyo ", flag: "🇰🇷 " }, // korean
+        { text: " Assalamu alaykum", flag: "🇪🇬 " }, // arabic
+        { text: " Hej", flag: "🇩🇰 " }, // danish
+        { text: "Shikamoo", flag: "🇰🇪 " }, // swahili
+        { text: " Hoi", flag: "🇳🇱 " }, // dutch
+        { text: " Yassas", flag: "🇬🇷 " }, // greek
+        { text: " Witaj", flag: "🇵🇱 " }, // polish
+        { text: "Selamat siang ", flag: "🇮🇩 " }, // indonesian
+        { text: " Namaste", flag: "🇮🇳 " }, // hindi
+        { text: " Merhaba", flag: "🇹🇷 " }, // turkish
+        { text: " Shalom", flag: "🇮🇱 " }, // hebrew
+        { text: " Hej", flag: "🇸🇪 " }, // swedish
+        { text: " Akaam jirtani", flag: "🇪🇹 " }, // oromo
+        { text: " Zdrasti ", flag: " 🇧🇬 " }, // bulgarian
+        { text: " Hug ", flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿  " }, // scottish gaelic
+        { text: " Halló ", flag: "🇮🇸  " }, // icelandic
+        { text: " Suosdei ", flag: "🇰🇭 " }, // cambodian khmer
+        { text: " Bună ziua ", flag: "🇷🇴 " }, // romanian
+        { text: " La ora na ", flag: "🇵🇫  " }, // tahitian / french polynesian
+        { text: " Chào ", flag: "🇻🇳 " }, // vietnamise
+        { text: " Moi  ", flag: "🇫🇮  " }, // finnish
+        { text: " Helo ", flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿  " }, // Welsh
+        { text: " Selamat pagi ", flag: "🏴󠁧󠁢󠁷󠁬󠁳🇲🇾 " }, // malaysian
+        { text: " Sawubona ", flag: "🇿🇦  " }, // Zulu
+      ];
+
+      function getTranslation() {
+        const random = Math.floor(Math.random() * greetings.length);
+        const greeting = greetings[random];
+        translation.textContent = greeting.text;
+        // to avoid the same greeting reaparing twice in a row
+        if (greeting === lastGreeting) {
+          return getTranslation();
+        }
+        lastGreeting = greeting;
+        // the flags should attach to the right greeting
+        const flag = greeting.flag;
+        divFlag.innerHTML = flag;
+
+        console.table(greetings);
+        console.log(greeting, random);
+
+        document.querySelector(".number").textContent = `#${random}`;
+      }
+
+      window.addEventListener("load", getTranslation);
+      submitBtn.addEventListener("click", getTranslation);
+    </script>
   </body>
 </html>
