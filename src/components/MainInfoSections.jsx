@@ -32,7 +32,7 @@ const MainInfoSections = ({ isHeroContent,place, sectionTitle, mainContent }) =>
                         </p>
                     </div>
                     <figure className="main__picture">
-                        <img src="/src/assets/images/shyguy.jpg" alt="my profile picture" />
+                        <img src="/assets/images/shyguy.jpg" alt="my profile picture" />
                     </figure>
                     
                 </div>

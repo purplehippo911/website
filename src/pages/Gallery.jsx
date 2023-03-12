@@ -41,22 +41,22 @@ const Gallery = () => {
                     <div className="swiper-wrapper">
                         {/* <!-- Slides --> */}
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/balloon.jpg" alt="a pink balloon" />
+                            <img src="/assets/images/balloon.jpg" alt="a pink balloon" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/building.jpg" alt="a tall building" />
+                            <img src="/assets/images/building.jpg" alt="a tall building" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/greenleaves.jpg" alt="green leaves" />
+                            <img src="/assets/images/greenleaves.jpg" alt="green leaves" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/forest.jpg" alt="a forest in the distant" />
+                            <img src="/assets/images/forest.jpg" alt="a forest in the distant" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/leaves.jpg" alt="more green leaves" />
+                            <img src="/assets/images/leaves.jpg" alt="more green leaves" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/park.jpg" alt="a big park" />
+                            <img src="/assets/images/park.jpg" alt="a big park" />
                         </div>
                     </div>
                     {/* <!-- If we need pagination --> */}
@@ -77,23 +77,23 @@ const Gallery = () => {
                         <div className="swiper-wrapper">
                             {/* <!-- Slides --> */}
                             <div className="swiper-slide">
-                                <img src="/src/assets/images/tower.jpg" alt="more green leaves" />
+                                <img src="/assets/images/tower.jpg" alt="more green leaves" />
                             </div>
                             <div className="swiper-slide">
-                                <img src="/src/assets/images/tree.jpg" alt="a tree in winter" />
+                                <img src="/assets/images/tree.jpg" alt="a tree in winter" />
                             </div>
                             <div className="swiper-slide">
                                 <img
-                                    src="/src/assets/images/window.jpg"
+                                    src="/assets/images/window.jpg"
                                     alt="zoomed in on some curtains"
                                 />
                             </div>
                             <div className="swiper-slide">
-                                <img src="/src/assets/images/clock.jpg" alt="a clock" />
+                                <img src="/assets/images/clock.jpg" alt="a clock" />
                             </div>
                             <div className="swiper-slide">
                                 <img
-                                    src="/src/assets/images/classNameroom.jpg"
+                                    src="/assets/images/classNameroom.jpg"
                                     alt="a classNamerom from a chair's hole perspective"
                                 />
                             </div>
@@ -116,22 +116,22 @@ const Gallery = () => {
                     <div className="swiper-wrapper">
                         {/* <!-- Slides --> */}
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/rainonwindow.jpg" alt="rain on window" />
+                            <img src="/assets/images/rainonwindow.jpg" alt="rain on window" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/drops.jpg" alt="rain drops" />
+                            <img src="/assets/images/drops.jpg" alt="rain drops" />
                         </div>
                         <div className="swiper-slide">
                             <img
-                            src="/src/assets/images/road.jpg"
+                            src="/assets/images/road.jpg"
                             alt="a road with a soccer field⚽  in the bakground"
                         />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/redbuilding.jpg" alt="a red building" />
+                            <img src="/assets/images/redbuilding.jpg" alt="a red building" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/src/assets/images/torget.jpg" alt="Tøyen torg" />
+                            <img src="/assets/images/torget.jpg" alt="Tøyen torg" />
                         </div>
                     </div>
                     {/* <!-- If we need pagination --> */}

@@ -39,7 +39,7 @@ import "../styles/components/_header";
             </ul>
           </nav>
           <a className="hamburger" onClick={() => dropdown.classList.toggle("active")}>
-            <img src="/src/assets/images/burger-solid.svg" alt="a burger" />
+            <img src="/assets/images/burger-solid.svg" alt="a burger" />
           </a>
         </div>
         
