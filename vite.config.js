@@ -36,4 +36,5 @@ export default defineConfig({
       },
     },
   },
+  base: '/website/'
 })
