@@ -39,15 +39,6 @@ const Home = () => {
                 And of course, he loves to game, with Overwatch 2 being one of his current favorites. 
                 Through various hobbies and interests, Purplehippo911 finds balance, inspiration, and joy in his life."/>
 
-
-            <MainInfoSections
-                isHeroContent={false}
-                place="fourth"
-                sectionTitle="Where can I learn more about you?"
-                mainContent=" Well, you can check out my projects by checking my portfolio. You'll
-                find it on the navigation bar. The best way I can improve is by
-                continously getting some feedback."/>
-
         </main>
      );
 }
