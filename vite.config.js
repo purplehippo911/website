@@ -4,27 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react( {
-      template: {
-                transformAssetUrls: {
-                    base: "/public/",
-                    includeAbsolute: false,
-                },
-            },
-    })
-  ],
-  resolve: {
-    extensions: [
-      ".mjs",
-      ".js",
-      ".ts",
-      ".jsx",
-      ".tsx",
-      ".json",
-      ".vue",
-      ".scss",
-    ]
-  },
+    react()
+  ]
   esbuild: {
     loader: "jsx",
   },
