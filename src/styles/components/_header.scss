@@ -14,13 +14,13 @@ header {
     @media only screen and (max-width:700px) {
 
         header {
-            background:var(--yellow);
+            background:$Yellow;
         }
+
+        // .row {
+        //     flex-direction:column;
+        // }
     
-        .quote {
-            background:white;
-            color:var(--yellow);
-        }
     
         .nav {
             display:none;
@@ -32,6 +32,7 @@ header {
     
         .hamburger {
             display:block;
+            order:2;
         }
         
     }
@@ -39,7 +40,7 @@ header {
 
 .logo, .hamburger {
     width:20%;
-    margin:auto;
+    margin-left:auto;
     margin-left:auto;
     text-decoration: none;
     color:$White;
@@ -79,10 +80,7 @@ nav {
 }
 
 .dropdown {
-    float:left;
-    margin-right:auto;
-    overflow: hidden;
-    display:none;
+    margin:auto;
     transition: 0.5s ease-in-out;
 }
 

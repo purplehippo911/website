@@ -5,10 +5,27 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color:$Black;
     color: $White;
     padding: 1rem;
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(2, 50px);
+      justify-content:center;    
+      align-items:center;
+      gap:5rem;
+      background:$White;
+
+    }
+    .github, .twitter {
+      width:100%;
+    }
     
+    img {
+      height: 100%;
+      width: 100%;
+    }
     .social-links {
       display: flex;
       flex-direction: row;
@@ -21,12 +38,9 @@
         align-items: center;
         color: #fff;
         text-decoration: none;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        width: 3rem;
-        height: 3rem;
         border-radius: 50%;
         background-color: #555;
+        width:100%;
         
         &:hover {
           background-color: #777;

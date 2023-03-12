@@ -3,25 +3,13 @@
 
 // styling the slider
 
-.swiper {
-    padding:5rem;
-    background:var(--black);
-}
-
-.swiper-wrapper {
-    width:100%;
-    max-height:500px;
-}
-
-.swiper-slide {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:60px;
-}
-
 .swiper-slide > img {
     border-radius:12px 12px 12px 12px;
 }
 
-// styling the gallery
+// // styling the gallery
+
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 3fr));
+}

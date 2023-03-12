@@ -87,13 +87,6 @@ section {
     margin-bottom:7rem;
 }
 
-.gallery {
-    display:grid;
-    gap:2rem;
-    margin:1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
-}
-
 section {
     width:80%;
 }

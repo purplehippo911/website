@@ -1,24 +1,38 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import Advice from "./Advice";
 import "../styles/components/_header";
 
 
     const Header = () => {
-      const hamburger = document.querySelector(".hamburger");
       const dropdown = document.querySelector(".dropdown");
 
+      const [isDropdown, setIsDropdown] = useState(false);
+
+      function dropdownToggle() {
+        if(isDropdown == false)
+          setIsDropdown(true)
+        else if(isDropdown == true)
+          setIsDropdown(false)
+      }
     return ( 
       <header>
         <div className="container container-main row">
           
-          <div className="dropdown">
+        <a className="hamburger" onClick={() => dropdownToggle()}>
+            <img src="/assets/images/burger-solid.svg" alt="a burger" />
+          </a>
+
+          {isDropdown && <div className="dropdown">
             <div className="dropdown-content">
               <Link to="/">Home</Link>
               <Link to="/portfolio">Portfolio</Link>
               <Link to="/gallery">Gallery</Link>
             </div>
-          </div>
+          </div>}
+
+
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
@@ -38,9 +52,7 @@ import "../styles/components/_header";
               </li>
             </ul>
           </nav>
-          <a className="hamburger" onClick={() => dropdown.classList.toggle("active")}>
-            <img src="/assets/images/burger-solid.svg" alt="a burger" />
-          </a>
+         
         </div>
         
         <Advice/>
