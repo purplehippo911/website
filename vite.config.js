@@ -7,7 +7,7 @@ export default defineConfig({
     react( {
       template: {
                 transformAssetUrls: {
-                    base: null,
+                    base: "/public/",
                     includeAbsolute: false,
                 },
             },
@@ -36,5 +36,4 @@ export default defineConfig({
       },
     },
   },
-  base: '/website/'
 })
