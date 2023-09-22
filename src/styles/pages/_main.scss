@@ -3,8 +3,8 @@
 
 .hero-section {
     width: 100%;
-    padding:1rem 0;
-    height:100vh;
+    padding:2rem 0;
+    height:90vh;
     background:white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -45,6 +45,8 @@
     }
 
     @media screen and (max-width:800px){
+        height: 100vh;
+        padding: 1rem 0;
         .container.row {
             padding:0;
             flex-direction: column;
@@ -71,6 +73,7 @@
     gap:2rem;
     .greeting__text, flags {
         width:100%;
+        word-break: keep-all;
     }
     .flags {
         font-size: 1.7em;

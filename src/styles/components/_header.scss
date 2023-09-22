@@ -1,7 +1,13 @@
 @import "../utils/_variables";
 
+.overflow-hidden {
+    overflow: hidden;
+  }
+  
 header {
+    position: relative;
     background:$Black;
+    z-index: 999;
     @media only screen and (min-width:1000px) {
         .nav__list {
             gap:5rem;
@@ -80,6 +86,9 @@ nav {
     color:white;
 }
 
+.dropdown-content + body {
+    overflow:hidden;
+}
 .dropdown {
     width:100%;
     min-height:0;
@@ -109,7 +118,9 @@ nav {
         top: 1rem;
         left: 1rem;
     }
-
+    header {
+        overflow: none;
+    }
 }
 
 .dropdown-content {
@@ -118,7 +129,6 @@ nav {
     flex-direction: column;
     gap:2rem;
     
-    
     margin:0 auto;
     padding:2rem;
 }
@@ -126,12 +136,13 @@ nav {
 .dropdown.active .dropdown-content {
     display: flex;
 }
-.dropdown a {
+.dropdown-content a:not(.logo) {
     margin:auto;
+    font-size: 1.5em;
 }
 
 .dropdown a:hover {
-    color:$Black;
+    color:$White;
 }
 
 .hamburger {
@@ -152,6 +163,13 @@ nav {
         position: absolute;
         left:0;
         top:0;
+    }
+}
+
+.social-links {
+    @extend .social-links;
+    .social-links__item {
+        @extend .social-links__item;
     }
 }
 

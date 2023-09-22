@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/components/_header.scss";
 
@@ -8,6 +8,14 @@ import "../styles/components/_header.scss";
       const toggleDropdown = () => {
         setDropddownOpen(!isDropdownOpen)
       }
+
+      useEffect(() => {
+        if(isDropdownOpen) {
+          document.body.classList.add("overflow-hidden");
+        } else {
+          document.body.classList.remove("overflow-hidden");
+        }
+      }, [isDropdownOpen]);
 
     return ( 
       <header>
@@ -57,9 +65,23 @@ import "../styles/components/_header.scss";
                 </svg>
               </a>
 
-                <Link to="/">Home</Link>
-                <Link to="/portfolio">Portfolio</Link>
-                <Link to="/gallery">Gallery</Link>
+                <Link to="/" onClick={toggleDropdown}>Home</Link>
+                <Link to="/portfolio" onClick={toggleDropdown}>Portfolio</Link>
+                <Link to="/gallery" onClick={toggleDropdown}>Gallery</Link>
+
+              {/* <div className="social-links">
+                  <a href="https://github.com/purplehippo911/" className="social-links__item">
+                      <img src="../assets/icons/github.svg" alt="Check me out on Github" className="github" />
+                  </a>
+                  <a href="https://twitter.com/muggie43/" className="social-links__item">
+                      <img src="../assets/icons/twitter.svg" alt="Check me out on Twitter" className="twitter"/>
+                  </a>
+                  <a href="mailto:muggie@duck.com" className="social-links__item">
+                      <img src="../assets/icons/email.png/" alt="email icon" />
+                  </a>
+              </div> */}
+
+
             </div>
           </div>
 
