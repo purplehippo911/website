@@ -38,12 +38,19 @@ header {
 }
 
 .logo, .hamburger {
-    width:3rem;
+    width:4rem;
     display:flex;
     align-items: center;
     text-align: center;
     gap:1rem; 
     margin:auto;
+
+    &:hover {
+        scale:1.1;
+        &::after{
+            color: $Yellow;
+        }
+    }
 
     img {
         border-radius: 25%;
@@ -54,6 +61,8 @@ header {
    content: "Muggie";
    color:$White;
    font-weight: 700;
+   font-size:1.5em;
+   
 }
 
 

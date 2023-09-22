@@ -11,7 +11,7 @@ import "../styles/components/_header.scss";
         <div className="container container-main row">
 
           <Link to="/" className="logo">
-            <img src="../assets/images/MuggieYellow.webp" alt="my logo" />
+            <img src="../assets/icons/MuggieYellow.webp" alt="my logo" />
           </Link>
           
           <div className="dropdown">
@@ -41,7 +41,7 @@ import "../styles/components/_header.scss";
             </ul>
           </nav>
           <a className="hamburger" onClick={() => dropdown.classList.toggle("active")}>
-            <img src="/../assets/burger-solid.svg" alt="a burger" />
+            <img src="/../assets/icons/burger-solid.svg" alt="a burger" />
           </a>
         </div>
     </header>

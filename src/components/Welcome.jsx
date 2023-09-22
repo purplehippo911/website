@@ -42,6 +42,7 @@ const Welcome = () => {
         { text: " Helo ", flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿  " }, // Welsh
         { text: " Selamat pagi ", flag: "🇲🇾 " }, // malaysian
         { text: " Sawubona ", flag: "🇿🇦  " }, // Zulu
+        { text: "வணக்கம்", flag: "🇱🇰"} // Tamil
       ];
 
     useEffect(() => {

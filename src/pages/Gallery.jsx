@@ -33,7 +33,7 @@ const Gallery = () => {
       });
 
     return ( 
-        <div className="gallery">
+        <article className="gallery">
             <section className="swiper-section">
                 <div className="container row">
                 {/* <!-- Slider main container --> */}
@@ -145,7 +145,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </article>
      );
 }
  
