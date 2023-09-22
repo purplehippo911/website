@@ -16,25 +16,15 @@
 // resetting the default
 *, *::before, *::after {
     box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    margin:0;
-    font-family: 'Lato', sans-serif;
-    font-size:1.5em;    
+    font-size:1.5em;
+    margin: 0;
 }
 
 // common styles used throughout the website is here
-main {
-    padding:2rem;
-}
-
-section {
-    padding:0 100px;
-    margin:0 auto;
-    margin-top:2rem;
-    background:$Black;
-}
 
 a {
     text-decoration: none;
@@ -42,8 +32,9 @@ a {
 
 
 .container {
-    width: 100%;
+    width: 80%;
     margin:0 auto;
+    padding:1rem;
 }
 
 .row {
@@ -71,12 +62,9 @@ img {
     max-width:100%;
 }
 
-.hero,
-.main, 
-section {
-    width:100%;
-    padding:3rem;
-    margin-bottom:7rem;
+.main
+ {
+  margin-bottom:5rem;
 }
 
 .gallery {
@@ -84,10 +72,6 @@ section {
     gap:2rem;
     margin:1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
-}
-
-section {
-    width:80%;
 }
 
 .footer {
@@ -100,6 +84,10 @@ figure {
 
 span, em {
     margin:0 auto;
+}
+
+p {
+    opacity: 60%;
 }
 
 button {

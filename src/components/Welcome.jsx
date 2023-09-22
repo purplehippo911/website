@@ -57,14 +57,12 @@ const Welcome = () => {
     }, [])
 
     return ( 
-            <div className="greeting-section">
-              <div className="text">
-                <h2 className="title"> {translation} </h2>
-                <a href="#" className="flags">
-                    <strong className="flag">{flag} </strong>
-                </a>
-              </div>
-            </div>
+      <section className="greeting">
+          <h2 className="greeting__text"> {translation} </h2>
+          <a href="#" className="flags">
+              <strong className="flag">{flag} </strong>
+          </a>
+      </section>
      );
 }
  

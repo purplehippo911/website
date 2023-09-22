@@ -1,25 +1,25 @@
 import "../styles/pages/_portfolio.scss";
 const Portfolio = () => {
     return ( 
-      <main class="main">
-        <div class="container grid">
-        <h2 class="hero__title">My projects</h2>
-        <div class="gallery">
+      <main className="main">
+        <div className="container grid">
+        <h2 className="hero__title">My projects</h2>
+        <div className="gallery">
           <a
             href="https://purplehippo911.github.io/flexbox/"
-            class="hero__item flexbox"
+            className="hero__item flexbox"
           >
             <img src="../assets/screenshots/flexForm.png" alt="flexbox" />
           </a>
           <a
             href="https://purplehippo911.github.io/SignUp_form/"
-            class="hero__item signUp"
+            className="hero__item signUp"
           >
             <img src="../assets/screenshots/singUP.jpg" alt="signUp"
           /></a>
           <a
             href="https://purplehippo911.github.io/pricingComponent"
-            class="hero__item pricingComponent"
+            className="hero__item pricingComponent"
           >
             <img
               src="/../assets/screenshots/pricingComponent.png"
@@ -28,19 +28,19 @@ const Portfolio = () => {
           </a>
           <a
             href="https://purplehippo911.github.io/weatherApp/"
-            class="hero__item weatherApp"
+            className="hero__item weatherApp"
           >
             <img src="/../assets/screenshots/weatherApp.png" alt="weatherApp" />
           </a>
           <a
             href="https://purplehippo911.github.io/Grid/"
-            class="hero__item Grid"
+            className="hero__item Grid"
           >
             <img src="/../assets/screenshots/tacoSite.png" alt="Grid" />
           </a>
           <a
             href="https://purplehippo911.github.io/GridTestimonials/"
-            class="hero__item gridTestimonials"
+            className="hero__item gridTestimonials"
           >
             <img
               src="/../assets/screenshots/gridTestimonials.png"
@@ -49,7 +49,7 @@ const Portfolio = () => {
           </a>
           <a
             href="https://purplehippo911.github.io/adviceGenerator/"
-            class="hero__item advice"
+            className="hero__item advice"
           >
             <img
               src="/../assets/screenshots/adviceGen.png"
@@ -58,7 +58,7 @@ const Portfolio = () => {
           </a>
           <a
             href="https://purplehippo911.github.io/asyncButton/"
-            class="hero__item async"
+            className="hero__item async"
           >
             <img
               src="/../assets/screenshots/async.png"
@@ -67,19 +67,19 @@ const Portfolio = () => {
           </a>
           <a
             href="https://purplehippo911.github.io/Dinosaur_game/"
-            class="hero__item dinosaur"
+            className="hero__item dinosaur"
           >
             <img src="/../assets/screenshots/dinosaur.png" alt="a dinosaur game" />
           </a>
           <a
             href="https://purplehippo911.github.io/Js30/"
-            class="hero__item js30"
+            className="hero__item js30"
           >
             <img src="/../assets/screenshots/js30.png" alt="some js projects" />
           </a>
           <a
             href="https://purplehippo911.github.io/3-column-preview-card-component/"
-            class="hero__item threeColumns"
+            className="hero__item threeColumns"
           >
             <img
               src="/../assets/screenshots/three.png"
@@ -88,13 +88,13 @@ const Portfolio = () => {
           </a>
           <a
             href="https://purplehippo911.github.io/interactiveRating/"
-            class="hero__item rating"
+            className="hero__item rating"
           >
             <img src="/../assets/screenshots/rating.png" alt="rating component" />
           </a>
           <a
             href="https://purplehippo911.github.io/sunnySide/"
-            class="hero__item sunnySide"
+            className="hero__item sunnySide"
           >
             <img
               src="/../assets/screenshots/sunnySide.png"

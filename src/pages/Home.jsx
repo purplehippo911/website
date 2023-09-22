@@ -1,20 +1,31 @@
 import MainInfoSections from "../components/MainInfoSections";
+import Welcome from "../components/Welcome";
 import "../styles/pages/_main.scss";
 
 const Home = () => {
     return ( 
         <main className="main">
 
-            <MainInfoSections
-                isHeroContent={true}
-                place="first"
-                sectionTitle="Who am I?"
-                mainContent={`I am a self-taught developer  and graphic designer.`}/>
+            <section className="hero-section">
+                <div className="container row">
+                    <div className="col">
+                        <Welcome/>
+                        <h2 className="hero__title"> I'm Astro</h2>
+                        <p className="hero__info">
+                            I am an enthusiastic self-taught web developer and graphic designer.
+                        </p>
+                    </div>
+                    <figure className="hero__picture">
+                        <img src="/assets/images/shyguy.jpg" alt="my profile picture" />
+                    </figure>
+                    
+                </div>
+            </section>
 
 
             <MainInfoSections
                 isHeroContent={false}
-                place="second"
+                place="first"
                 sectionTitle="Why did I learn to code?"
                 mainContent="The love for technology has always been a part of purplehippo's life, even at a young age.
                     In 2019, he decided to take his interest in technology to the next level by exploring the world of coding.
@@ -27,7 +38,7 @@ const Home = () => {
 
             <MainInfoSections
                 isHeroContent={false}
-                place="third"
+                place="second"
                 sectionTitle="Do I have any other hobbys"
                 mainContent="Well, aside from coding, Purplehippo has a wide range of hobbies and interests that keep him engaged and fuliflled.
                 He is an avid reader of novels and comics, finding joy in getting lost in new worlds and stories. Photography is also a passion of his, particularly capturing the beauty of nature. Cooking foreign cuisines is another hobby that he enjoys, always experimenting with new recipes and flavors.

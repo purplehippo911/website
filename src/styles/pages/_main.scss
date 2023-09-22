@@ -1,57 +1,90 @@
 @import "../utils/variables";
 
 
-.greeting-section {
-    background:$Yellow;
-    color:$Black;
-    border:5px solid $Black;
-    width:100%;
-    padding:1rem;
-    @media screen and (max-width:800px){
-        
-    .text {
-        grid-template-columns:100%;
-        grid-template-rows:repeat(2, 2rem);
-        justify-items:center;
+.hero-section {
+    width: 100%;
+    padding:1rem 0;
+    height:100vh;
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .hero__title {
+        color:$Yellow;
+        font-weight: 900;
+        font-size: 4rem;
+        margin: 2rem 0 0rem
     }
-    .title {
+
+    .hero__info {
+        margin: 0;
+    }
+
+    .hero__picture {
+        width:100%;
+        margin-left:5rem;
         text-align:center;
     }
-        
+    
+    img[alt="my profile picture"] {
+        height: 30rem;
+        border-radius:2rem;
+        box-shadow:10px 12px anitqueWwite;
+    }
+    
+    
+    .infoSection {
+        @media screen and (max-width:800px){
+            .row {
+                display:grid;
+                grid-template-columns:100%;
+                grid-template-rows:2fr auto;
+                gap:2rem;
+            }
+        }
+    
+    }
+
+    @media screen and (max-width:800px){
+        .container.row {
+            padding:0;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .greeting {
+            display:none;
+        }
     }
 }
 
-.container--main {
+
+.greeting {
+    background-color:$Yellow;
+    color:$Black;
+    border-radius:1rem;
+    width: fit-content;
+    padding:.2rem 1rem;
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    .greeting__text, flags {
+        width:100%;
+    }
+    .flags {
+        font-size: 1.7em;
+    }
+
+}
+
+.first-section, .second-section {
     width:80%;
-    max-width:900px;
+    padding:0 100px;
+    margin:0 auto;
+    margin-top:2rem;
+    background:$Black;
     color:$White;
-    align-self:center;
     text-align: center;
 }
 
-.main__picture {
-    width:100%;
-    margin-left:2rem;
-    text-align:center;
-}
-
-img[alt="my profile picture"] {
-    border-radius:2rem;
-    box-shadow:10px 12px anitqueWwite;
-}
-
-
-.first-section {
-    @media screen and (max-width:800px){
-        .row {
-            display:grid;
-            grid-template-columns:100%;
-            grid-template-rows:2fr auto;
-            gap:2rem;
-        }
-        .main__picture{
-            margin:0rem;
-        }
-    }
-
-}
