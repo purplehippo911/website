@@ -9,14 +9,14 @@
 
 .hero__item {
     display:grid;
+    grid-column:span 2;
     text-decoration: none;
     color:$Yellow;
-}
-
-.hero__item > img {
     border:5px solid $Black;
-}
-
-.hero__item > img:hover {
-    border:5px solid $Yellow;
+    &:hover {
+        border:5px solid $Yellow;
+    }
+    @media screen and (min-width:1400px) {
+        grid-column: span 2;
+    }
 }

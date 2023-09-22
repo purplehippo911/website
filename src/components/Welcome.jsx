@@ -44,10 +44,6 @@ const Welcome = () => {
         { text: " Sawubona ", flag: "🇿🇦  " }, // Zulu
       ];
 
-      function getTranslation() {
-        
-        }
-
     useEffect(() => {
         const random = Math.floor(Math.random() * greetings.length);
         const greeting = greetings[random];

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Advice from "./Advice";
-import "../styles/components/_header";
-
+import "../styles/components/_header.scss";
 
     const Header = () => {
       const hamburger = document.querySelector(".hamburger");
@@ -11,6 +9,10 @@ import "../styles/components/_header";
     return ( 
       <header>
         <div className="container container-main row">
+
+          <Link to="/" className="logo">
+            <img src="../assets/images/MuggieYellow.webp" alt="my logo" />
+          </Link>
           
           <div className="dropdown">
             <div className="dropdown-content">
@@ -39,11 +41,9 @@ import "../styles/components/_header";
             </ul>
           </nav>
           <a className="hamburger" onClick={() => dropdown.classList.toggle("active")}>
-            <img src="/src/assets/images/burger-solid.svg" alt="a burger" />
+            <img src="/../assets/burger-solid.svg" alt="a burger" />
           </a>
         </div>
-        
-        <Advice/>
     </header>
   );
 }

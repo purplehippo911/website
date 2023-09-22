@@ -1,4 +1,4 @@
-import "../styles/pages/_portfolio";
+import "../styles/pages/_portfolio.scss";
 const Portfolio = () => {
     return ( 
       <main class="main">
@@ -22,7 +22,7 @@ const Portfolio = () => {
             class="hero__item pricingComponent"
           >
             <img
-              src="/src/assets/screenshots/pricingComponent.png"
+              src="/../assets/screenshots/pricingComponent.png"
               alt="pricing Component"
             />
           </a>
@@ -30,20 +30,20 @@ const Portfolio = () => {
             href="https://purplehippo911.github.io/weatherApp/"
             class="hero__item weatherApp"
           >
-            <img src="/src/assets/screenshots/weatherApp.png" alt="weatherApp" />
+            <img src="/../assets/screenshots/weatherApp.png" alt="weatherApp" />
           </a>
           <a
             href="https://purplehippo911.github.io/Grid/"
             class="hero__item Grid"
           >
-            <img src="/src/assets/screenshots/tacoSite.png" alt="Grid" />
+            <img src="/../assets/screenshots/tacoSite.png" alt="Grid" />
           </a>
           <a
             href="https://purplehippo911.github.io/GridTestimonials/"
             class="hero__item gridTestimonials"
           >
             <img
-              src="/src/assets/screenshots/gridTestimonials.png"
+              src="/../assets/screenshots/gridTestimonials.png"
               alt="A grid testimonials section"
             />
           </a>
@@ -52,7 +52,7 @@ const Portfolio = () => {
             class="hero__item advice"
           >
             <img
-              src="/src/assets/screenshots/adviceGen.png"
+              src="/../assets/screenshots/adviceGen.png"
               alt="an advice generator"
             />
           </a>
@@ -61,7 +61,7 @@ const Portfolio = () => {
             class="hero__item async"
           >
             <img
-              src="/src/assets/screenshots/async.png"
+              src="/../assets/screenshots/async.png"
               alt="a web game with buttons"
             />
           </a>
@@ -69,20 +69,20 @@ const Portfolio = () => {
             href="https://purplehippo911.github.io/Dinosaur_game/"
             class="hero__item dinosaur"
           >
-            <img src="/src/assets/screenshots/dinosaur.png" alt="a dinosaur game" />
+            <img src="/../assets/screenshots/dinosaur.png" alt="a dinosaur game" />
           </a>
           <a
             href="https://purplehippo911.github.io/Js30/"
             class="hero__item js30"
           >
-            <img src="/src/assets/screenshots/js30.png" alt="some js projects" />
+            <img src="/../assets/screenshots/js30.png" alt="some js projects" />
           </a>
           <a
             href="https://purplehippo911.github.io/3-column-preview-card-component/"
             class="hero__item threeColumns"
           >
             <img
-              src="/src/assets/screenshots/three.png"
+              src="/../assets/screenshots/three.png"
               alt="three column preview card component"
             />
           </a>
@@ -90,14 +90,14 @@ const Portfolio = () => {
             href="https://purplehippo911.github.io/interactiveRating/"
             class="hero__item rating"
           >
-            <img src="/src/assets/screenshots/rating.png" alt="rating component" />
+            <img src="/../assets/screenshots/rating.png" alt="rating component" />
           </a>
           <a
             href="https://purplehippo911.github.io/sunnySide/"
             class="hero__item sunnySide"
           >
             <img
-              src="/src/assets/screenshots/sunnySide.png"
+              src="/../assets/screenshots/sunnySide.png"
               alt="sunnySide agency landing page"
             />
           </a>

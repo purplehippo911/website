@@ -1,5 +1,5 @@
 import Welcome from "./Welcome";
-import "../styles/pages/_main";
+import "../styles/pages/_main.scss";
 
 const MainInfoSections = ({ isHeroContent,place, sectionTitle, mainContent }) => {
     
@@ -32,7 +32,7 @@ const MainInfoSections = ({ isHeroContent,place, sectionTitle, mainContent }) =>
                         </p>
                     </div>
                     <figure className="main__picture">
-                        <img src="/src/assets/images/shyguy.jpg" alt="my profile picture" />
+                        <img src="../assets/images/shyguy.jpg" alt="my profile picture" />
                     </figure>
                     
                 </div>

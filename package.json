@@ -20,7 +20,8 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "swiper": "^10.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

@@ -1,5 +1,5 @@
 import MainInfoSections from "../components/MainInfoSections";
-import "../styles/pages/_main";
+import "../styles/pages/_main.scss";
 
 const Home = () => {
     return ( 
@@ -9,10 +9,7 @@ const Home = () => {
                 isHeroContent={true}
                 place="first"
                 sectionTitle="Who am I?"
-                mainContent={`
-                Welcome to the world of Purplehippo911, a Norwegian teenager with a passion for coding.
-               This website is a hub for all things related to programming, web development, and technology. With expertise in HTML, CSS, Javascript, Python, and a little bit of C#, Purplehippo911 has a diverse range of skills that enable him to create stunning and interactive websites.
-                As a frontend developer, he specializes in Vue, React, and soon, Tailwind for CSS. Join Purplehippo911 on this journey as he shares his knowledge, experience, and love for coding with the world.`}/>
+                mainContent={`I am a self-taught developer  and graphic designer.`}/>
 
 
             <MainInfoSections

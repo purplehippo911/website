@@ -1,52 +1,40 @@
 @import "../utils/_variables";
+@import "../components/header";
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: $White;
-    padding: 1rem;
-    
-    .social-links {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
+    background-color: $Black;
+    padding: 2rem;
+    .row {
+      border:2px solid black;
+      width:80%;
+      gap:5rem;
       
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        text-decoration: none;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        width: 3rem;
-        height: 3rem;
+    }
+
+    .logo {
+      @extend .logo;
+      margin-left:5rem;
+    }
+    .social-links {
+      width:100%;
+      display:flex;
+      justify-content: end;
+      gap:1rem;
+      
+      .hero__item {
+        width:40%;
         border-radius: 50%;
-        background-color: #555;
+        padding:2rem;
+        background-color: white;
+
+        img {
+          height:100%;
+        }
         
         &:hover {
           background-color: #777;
         }
-        
-        &.github {
-          background-color: $White;
-          
-          &:hover {
-            background-color: #4867aa;
-          }
-        }
-        
-        &.twitter {
-          background-color: #1da1f2;
-          
-          &:hover {
-            background-color: #1991db;
-          }
-        }
+  
       }
     }
   }

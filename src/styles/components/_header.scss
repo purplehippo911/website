@@ -33,24 +33,27 @@ header {
         .hamburger {
             display:block;
         }
-        
     }
+        
 }
 
 .logo, .hamburger {
-    width:20%;
+    width:3rem;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    gap:1rem; 
     margin:auto;
-    margin-left:auto;
-    text-decoration: none;
-    color:$White;
+
+    img {
+        border-radius: 25%;
+    }
 }
 
-.logo::before {
-   content: "\f135";
-   font-family: "Font Awesome 5 Free";
-   font-style: normal;
-   font-weight: 900;
-   text-decoration: inherit;
+.logo::after {
+   content: "Muggie";
+   color:$White;
+   font-weight: 700;
 }
 
 
