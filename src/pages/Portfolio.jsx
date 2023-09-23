@@ -12,7 +12,7 @@ const Portfolio = () => {
             Projects.map(({title, url, imgURL, imgAlt, githubRepo}) => {
               return (
                 <section className="gallery__item" key={key++}>
-                    <a href={url}>
+                    <a href={url} target="_blank">
                       <img src={imgURL} alt={imgAlt} />
                     </a>
                     <div className="gallery__item__overlay">
@@ -21,7 +21,7 @@ const Portfolio = () => {
                               <h2>{title}</h2>
                               <p>{imgAlt}</p>
                             </a>
-                            <a href={githubRepo} className="repo-link">Link to Source Code</a>
+                            <a href={githubRepo} target="_blank" className="repo-link">Link to Source Code</a>
                         </div>
                     </div>
                 </section>
