@@ -4,6 +4,7 @@
 
 // components
 @import "./components/_header";
+@import "./components/_footer";
 
 // pages
 @import "./pages/_main";
@@ -19,6 +20,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size:1.5em;
     margin: 0;
@@ -29,6 +34,9 @@ body {
 
 a {
     text-decoration: none;
+    &:hover {
+        color:$Yellow;
+    }
 } 
 
 
@@ -70,7 +78,7 @@ img {
 
 .gallery {
     display:grid;
-    gap:2rem;
+    gap:3rem;
     margin:1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
 }
@@ -86,24 +94,37 @@ figure {
 span, em {
     margin:0 auto;
 }
+    
+h1 {
+    color:$Yellow;
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: 0 0 3px $Black, 0 0 5px $Black;
+}
+
+h1, h2 {
+    margin: 2rem 0 0rem
+}
 
 p {
     opacity: 60%;
+    margin: 0;
 }
 
-button {
+button, .btn {
     border-radius: 8px;
-    border: 1px solid transparent;
+    outline: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: 0.2s ease-in-out;
+    text-align: center;
   }
-  button:hover {
-    border-color: #646cff;
+  .btn:hover {
+    outline:5px solid $Yellow;
   }
   button:focus,
   button:focus-visible {

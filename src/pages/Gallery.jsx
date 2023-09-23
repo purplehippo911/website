@@ -34,6 +34,7 @@ const Gallery = () => {
 
     return ( 
         <article className="gallery">
+            <h1 className="gallery__title">Gallery</h1>
             <section className="swiper-section">
                 <div className="container row">
                 {/* <!-- Slider main container --> */}

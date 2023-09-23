@@ -21,12 +21,14 @@ function App() {
       <Router>
         <Header/>
 
-        <Routes>
-          <Route index element={ <Home/> }/>
-          <Route path="/gallery" element={ <Gallery/> }/>
-          <Route path="/portfolio" element={ <Portfolio/> }/>
-          <Route path="*" element={ <NotFound/> } />
-        </Routes>
+        <main>
+          <Routes>
+            <Route index element={ <Home/> }/>
+            <Route path="/gallery" element={ <Gallery/> }/>
+            <Route path="/portfolio" element={ <Portfolio/> }/>
+            <Route path="*" element={ <NotFound/> } />
+          </Routes>
+        </main>
 
         <Footer/>
       </Router>

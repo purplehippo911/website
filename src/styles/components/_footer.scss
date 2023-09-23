@@ -13,20 +13,15 @@
       margin-left:0rem;
     }
     .social-links {
-      width:40%;
+      width:25%;
       display:flex;
       gap:1rem;
-      padding:1rem;
       justify-content: center;
       .social-links__item {
-        width:23%;
+        width:100%;
         border-radius: 50%;
-        padding:1rem;
+        padding: 0.45em;
         background: white;
-        
-       &:hover {
-          scale:1.2;
-        }
   
       }
     }

@@ -1,68 +1,34 @@
 import { useEffect, useState } from "react";
+import Greetings from "../utils/Greetings";
 
 const Welcome = () => {
     // Where I got the greetings from
       // https://www.babbel.com/en/magazine/how-to-say-hello-in-10-different-languages
-      const [translation, setTranslation] = useState('');
+      const [greetingText, setGreetingText] = useState('');
       const [flag, setFlag] = useState('');
-      let lastGreeting;
 
-      const greetings = [
-        { text: "Hi", flag: "🇬🇧 " }, // english
-        { text: " Hei", flag: "🇳🇴 " }, // norsk
-        { text: "Bonjour", flag: "🇫🇷 " }, // french
-        { text: "Hola", flag: "🇪🇸 " }, // spanish
-        { text: "Privet", flag: "🇷🇺 " }, // russian
-        { text: " Ni hao", flag: "🇨🇳 " }, // chinese
-        { text: " Ciao", flag: "🇮🇹 " }, // italian
-        { text: " Konnichiwa", flag: "🇯🇵 " }, // japanese
-        { text: "Guten Tag", flag: "🇩🇪 " }, // german
-        { text: " Olá", flag: "🇵🇹 " }, // portuguese
-        { text: " Anyong haseyo ", flag: "🇰🇷 " }, // korean
-        { text: " Assalamu alaykum", flag: "🇪🇬 " }, // arabic
-        { text: " Hej", flag: "🇩🇰 " }, // danish
-        { text: "Shikamoo", flag: "🇰🇪 " }, // swahili
-        { text: " Hoi", flag: "🇳🇱 " }, // dutch
-        { text: " Yassas", flag: "🇬🇷 " }, // greek
-        { text: " Witaj", flag: "🇵🇱 " }, // polish
-        { text: "Selamat siang ", flag: "🇮🇩 " }, // indonesian
-        { text: " Namaste", flag: "🇮🇳 " }, // hindi
-        { text: " Merhaba", flag: "🇹🇷 " }, // turkish
-        { text: " Shalom", flag: "🇮🇱 " }, // hebrew
-        { text: " Hej", flag: "🇸🇪 " }, // swedish
-        { text: " Akaam jirtani", flag: "🇪🇹 " }, // oromo
-        { text: " Zdrasti ", flag: " 🇧🇬 " }, // bulgarian
-        { text: " Hug ", flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿  " }, // scottish gaelic
-        { text: " Halló ", flag: "🇮🇸  " }, // icelandic
-        { text: " Suosdei ", flag: "🇰🇭 " }, // cambodian khmer
-        { text: " Bună ziua ", flag: "🇷🇴 " }, // romanian
-        { text: " La ora na ", flag: "🇵🇫  " }, // tahitian / french polynesian
-        { text: " Chào ", flag: "🇻🇳 " }, // vietnamise
-        { text: " Moi  ", flag: "🇫🇮  " }, // finnish
-        { text: " Helo ", flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿  " }, // Welsh
-        { text: " Selamat pagi ", flag: "🇲🇾 " }, // malaysian
-        { text: " Sawubona ", flag: "🇿🇦  " }, // Zulu
-        { text: "வணக்கம்", flag: "🇱🇰"} // Tamil
-      ];
-
-    useEffect(() => {
-        const random = Math.floor(Math.random() * greetings.length);
-        const greeting = greetings[random];
-        setTranslation(greeting.text);
+      const useGreeting = () => {
+        const random = Math.floor(Math.random() * Greetings.length);
+        const greeting = Greetings[random];
+        setGreetingText(greeting.text);
         // to avoid the same greeting reaparing twice in a row
         
         // the flags should attach to the right greeting
         const flag = greeting.flag;
         setFlag(flag);
+      };
+
+    useEffect(() => {
+        useGreeting()
     }, [])
 
     return ( 
-      <section className="greeting">
-          <h2 className="greeting__text"> {translation} </h2>
+      <button className="greeting" onClick={useGreeting}>
+          <h2 className="greeting__text"> {greetingText} </h2>
           <a href="#" className="flags">
               <strong className="flag">{flag} </strong>
           </a>
-      </section>
+      </button>
      );
 }
  

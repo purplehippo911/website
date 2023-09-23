@@ -1,22 +1,58 @@
 @import "../utils/variables";
 
-
 .hero-section {
     width: 100%;
+    height:auto;
     padding:2rem 0;
-    height:90vh;
-    background:white;
+    background:$White;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    .hero__title {
-        color:$Yellow;
-        font-weight: 900;
-        font-size: 4rem;
-        margin: 2rem 0 0rem
+    .greeting {
+        background-color:$Yellow;
+        color:$Black;
+        border-radius:1rem;
+        border:1px solid $White;
+        outline: 2px solid $Black;
+        width: fit-content;
+        padding:.2rem 1rem;
+        display:flex;
+        align-items: center;
+        gap:2rem;
+        margin-bottom: 2rem;
+        &:hover {
+            scale:1.05;
+        }
+        &:active {
+            background:inherit;
+            color: $Yellow;
+        }
+        .greeting__text, flags {
+            width:100%;
+            word-break: keep-all;
+            margin:0;
+        }
+        .flags {
+            font-size: 1.7em;
+        }
+    
     }
 
-    .hero__info {
-        margin: 0;
+    .hero__button {
+        width:100%;
+        margin-top:2rem;
+        color:$White;
+        background:$Yellow;
+        outline:2px solid $Black;
+
+        &:hover {
+            background:inherit;
+            color:$Yellow;
+            scale: 1.05;
+        }
+
+        @media screen and (max-width:800px) {
+            display: none;
+        }
     }
 
     .hero__picture {
@@ -30,7 +66,6 @@
         border-radius:2rem;
         box-shadow:10px 12px anitqueWwite;
     }
-    
     
     .infoSection {
         @media screen and (max-width:800px){
@@ -61,31 +96,11 @@
     }
 }
 
-
-.greeting {
-    background-color:$Yellow;
-    color:$Black;
-    border-radius:1rem;
-    width: fit-content;
-    padding:.2rem 1rem;
-    display:flex;
-    align-items: center;
-    gap:2rem;
-    .greeting__text, flags {
-        width:100%;
-        word-break: keep-all;
-    }
-    .flags {
-        font-size: 1.7em;
-    }
-
-}
-
-.first-section, .second-section {
+.card {
     width:80%;
     padding:0 100px;
     margin:0 auto;
-    margin-top:2rem;
+    margin-bottom:2rem;
     background:$Black;
     color:$White;
     text-align: center;

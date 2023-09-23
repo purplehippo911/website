@@ -25,3 +25,7 @@
 }
 
 // styling the gallery
+.gallery__title {
+    grid-column: 1/-1;
+    justify-self: center;
+}
