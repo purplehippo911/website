@@ -91,14 +91,13 @@ nav {
 }
 .dropdown {
     width:100%;
-    min-height:0;
     position: fixed;
     position: relative;
     left:0;
     top:0;
     display:none;
     z-index: 98;
-    padding-top:120px;
+    padding-top:5rem;
     transition: 0.5s ease-in-out;
 
     &.active {
@@ -125,12 +124,29 @@ nav {
 
 .dropdown-content {
     width:100%;
+    height: 80vh;
     display:none;
     flex-direction: column;
-    gap:2rem;
+    gap:5rem;
     
     margin:0 auto;
-    padding:2rem;
+    padding:2rem 0;
+
+    .col {
+        gap:5rem;
+
+       & > * {
+            display: flex;
+            &::before, &::after {
+                content: "";
+                padding: 0 .2rem;
+                width: 100%;
+                background: $White;
+                transform: rotate(90deg);
+                margin: 0 2rem;
+            }
+       } 
+    }
 }
 
 .dropdown.active .dropdown-content {
@@ -167,11 +183,32 @@ nav {
 }
 
 .social-links {
-    @extend .social-links;
+    display:flex;
+    gap:1rem;
+    justify-content: flex-end;
+    margin-bottom: 0;
+
     .social-links__item {
-        @extend .social-links__item;
+      width:10%;
+      border-radius: 50%;
+      padding: 0.3em;
+      background: white;
+
+      @media screen and (max-width:800px) {
+        padding: 0.6rem;
+        width: 15%;
+        justify-content: flex-start;
+      }
+      @media screen and (max-width:600px) {
+        width: 10%;
+      }
     }
-}
+    @media screen and (max-width:800px) {
+      grid-column: span 2;
+      justify-content: center;
+    }
+    
+  }
 
 .quote {
     display:flex;

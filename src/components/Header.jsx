@@ -65,21 +65,23 @@ import "../styles/components/_header.scss";
                 </svg>
               </a>
 
-                <Link to="/" onClick={toggleDropdown}>Home</Link>
-                <Link to="/portfolio" onClick={toggleDropdown}>Portfolio</Link>
-                <Link to="/gallery" onClick={toggleDropdown}>Gallery</Link>
+                <div className="col">
+                  <Link to="/" onClick={toggleDropdown}>Home</Link>
+                  <Link to="/portfolio" onClick={toggleDropdown}>Portfolio</Link>
+                  <Link to="/gallery" onClick={toggleDropdown}>Gallery</Link>
+                </div>
 
-              {/* <div className="social-links">
-                  <a href="https://github.com/purplehippo911/" className="social-links__item">
+              <div className="social-links">
+                  <a href="https://github.com/purplehippo911/" target="_blank" className="social-links__item btn">
                       <img src="../assets/icons/github.svg" alt="Check me out on Github" className="github" />
                   </a>
-                  <a href="https://twitter.com/muggie43/" className="social-links__item">
+                  <a href="https://twitter.com/muggie43/" target="_blank" className="social-links__item btn">
                       <img src="../assets/icons/twitter.svg" alt="Check me out on Twitter" className="twitter"/>
                   </a>
-                  <a href="mailto:muggie@duck.com" className="social-links__item">
+                  <a href="mailto:muggie@duck.com" target="_blank" className="social-links__item btn">
                       <img src="../assets/icons/email.png/" alt="email icon" />
                   </a>
-              </div> */}
+              </div>
 
 
             </div>
