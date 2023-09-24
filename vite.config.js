@@ -20,8 +20,6 @@ export default defineConfig({
     alias: {
       extensions: ['.js', '.jsx', '.ts', 'tsx'],
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@assets': fileURLToPath(new URL('./public', import.meta.url)),
-
     }
   }
 })

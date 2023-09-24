@@ -17,7 +17,7 @@ const Home = () => {
                         <a className="hero__button btn" href="#first">Check me out</a>
                     </div>
                     <figure className="hero__picture">
-                        <img src="/assets/images/shyguy.jpg" alt="my profile picture" />
+                        <img src="/assets/icons/shyguy.jpg" alt="my profile picture" />
                     </figure>
                 </div>
             </section>

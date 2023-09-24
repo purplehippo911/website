@@ -30,6 +30,10 @@ body {
     overflow: auto;
 }
 
+.App {
+    position: relative;
+}
+
 // common styles used throughout the website is here
 
 a {
@@ -69,11 +73,6 @@ a {
 
 img {
     max-width:100%;
-}
-
-.main
- {
-  margin-bottom:5rem;
 }
 
 .gallery {

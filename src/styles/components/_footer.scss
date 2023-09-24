@@ -4,6 +4,7 @@
 .footer {
     background: $Black;
     padding:1rem;
+    position: relative;
     .grid {
       grid-template-columns: 1fr 2fr;
       justify-items: normal;
@@ -59,5 +60,9 @@
         
       }
     }
+  }
+
+  .gallery-footer {
+    bottom: -210px;
   }
   

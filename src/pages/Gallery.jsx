@@ -1,151 +1,84 @@
 import "../styles/pages/_gallery.scss";
-import Swiper from "swiper";
+import GalleryImages from "../utils/GalleryImages";
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y, Keyboard, EffectCards, EffectFade } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+import 'swiper/scss/scrollbar';
+import 'swiper/scss/effect-fade';
+
+// zoom: true,
+// loop: true,
 
 const Gallery = () => {
-
-    const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        zoom: true,
-        direction: "horizontal",
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        keyboard: {
-          enabled: true,
-        },
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-      });
-
     return ( 
         <article className="gallery">
             <h1 className="gallery__title">Gallery</h1>
-            <section className="swiper-section">
-                <div className="container row">
-                {/* <!-- Slider main container --> */}
-                  <div div className="swiper">
-                    {/* <!-- Additional required wrapper --> */}
-                    <div className="swiper-wrapper">
-                        {/* <!-- Slides --> */}
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/balloon.jpg" alt="a pink balloon" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/building.jpg" alt="a tall building" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/greenleaves.jpg" alt="green leaves" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/forest.jpg" alt="a forest in the distant" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/leaves.jpg" alt="more green leaves" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/park.jpg" alt="a big park" />
-                        </div>
-                    </div>
-                    {/* <!-- If we need pagination --> */}
-                    <div className="swiper-pagination"></div>
-                    {/* <!-- If we need navigation buttons --> */}
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
-                    {/* <!-- If we need scrollbar --> */}
-                    <div className="swiper-scrollbar"></div>
-                  </div>
-                </div>
-            </section>
-            <section className="swiper-section">
-                <div className="container row">
-                    {/* <!-- Secondary Slider main container --> */}
-                    <div className="swiper">
-                    {/* <!-- Additional required wrapper --> */}
-                        <div className="swiper-wrapper">
-                            {/* <!-- Slides --> */}
-                            <div className="swiper-slide">
-                                <img src="/../assets/images/tower.jpg" alt="more green leaves" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src="/../assets/images/tree.jpg" alt="a tree in winter" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img
-                                    src="/../assets/images/window.jpg"
-                                    alt="zoomed in on some curtains"
-                                />
-                            </div>
-                            <div className="swiper-slide">
-                                <img src="/../assets/images/clock.jpg" alt="a clock" />
-                            </div>
-                            <div className="swiper-slide">
-                                <img
-                                    src="/../assets/images/classroom.jpg"
-                                    alt="a classroom from a chair's hole perspective"
-                                />
-                            </div>
-                        </div>
-                        {/* <!-- If we need pagination --> */}
-                        <div className="swiper-pagination"></div>
-                        {/* <!-- If we need navigation buttons --> */}
-                        <div className="swiper-button-prev"></div>
-                        <div className="swiper-button-next"></div>
-                        {/* <!-- If we need scrollbar --> */}
-                        <div className="swiper-scrollbar"></div>
-                    </div>
-                </div>
-                </section>
-                <section className="swiper-section">
-                <div className="container row">
-                    {/* <!-- Secondary Slider main container --> */}
-                    <div className="swiper">
-                    {/* <!-- Additional required wrapper --> */}
-                    <div className="swiper-wrapper">
-                        {/* <!-- Slides --> */}
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/rainonwindow.jpg" alt="rain on window" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/drops.jpg" alt="rain drops" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img
-                            src="/../assets/images/road.jpg"
-                            alt="a road with a soccer field⚽  in the bakground"
-                        />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/redbuilding.jpg" alt="a red building" />
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="/../assets/images/torget.jpg" alt="Tøyen torg" />
-                        </div>
-                    </div>
-                    {/* <!-- If we need pagination --> */}
-                    <div className="swiper-pagination"></div>
-                    {/* <!-- If we need navigation buttons --> */}
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
-                    {/* <!-- If we need scrollbar --> */}
-                    <div className="swiper-scrollbar"></div>
-                    </div>
-                </div>
-            </section>
+
+            <Swiper
+              // install Swiper modules
+              slidesPerView={1}
+              spaceBetween={50}
+              loop={true}
+              zoom={true}
+              navigation
+              keyboard={{
+                enabled: true,
+              }}
+              modules={[Keyboard, Navigation, Pagination, Scrollbar, A11y, EffectCards]} effect="cards" 
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              {/* {
+                GalleryImages.map(() => {
+                  return (
+                    <SwiperSlide>
+                      <img src={imgUrl} alt={imgAlt} />
+                      <p>{imgAlt}</p>
+                    </SwiperSlide>
+                  )
+                })
+              } */}
+            </Swiper>
+            
+            <Swiper
+              // install Swiper modules
+              slidesPerView={1}
+              spaceBetween={50}
+              loop={true}
+              zoom={true}
+              navigation
+              keyboard={{
+                enabled: true,
+              }}
+              modules={[Keyboard, Navigation, Pagination, Scrollbar, A11y, EffectCards]} effect="cards" 
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <img src="../assets/images/window.jpg" alt="image" />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src="../assets/images/balloon.jpg" alt="image" />
+              </SwiperSlide>
+              
+              <SwiperSlide>
+                <img src="../assets/images/clayBowl.jpeg" alt="image" />
+              </SwiperSlide>
+              
+              <SwiperSlide>
+                <img src="../assets/images/forest.jpg" alt="image" />
+              </SwiperSlide>
+            
+            </Swiper>    
+                    
         </article>
      );
 }
