@@ -7,14 +7,21 @@
 
 // styling the slider
 .swiper {
-    padding:2rem;
+    padding:5rem !important;
     width: 100%;
-    background:$Yellow;
+    background:$Black;
     border-radius: 12px;
+    grid-auto-flow: dense;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    @media screen and (min-width:810px){
+        grid-column: span 2;
+    }
 }
 
 .swiper-wrapper {
-    margin:0 .3rem;
+    margin:auto;
     display: flex;
     align-items: flex-start;
 }

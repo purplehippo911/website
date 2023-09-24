@@ -67,8 +67,8 @@ import "../styles/components/_header.scss";
 
                 <div className="col">
                   <Link to="/" onClick={toggleDropdown}>Home</Link>
-                  <Link to="/portfolio" onClick={toggleDropdown}>Portfolio</Link>
                   <Link to="/gallery" onClick={toggleDropdown}>Gallery</Link>
+                  <Link to="/portfolio" onClick={toggleDropdown}>Portfolio</Link>
                 </div>
 
               <div className="social-links">
