@@ -1,14 +1,10 @@
 import "../styles/components/_footer.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-    const location = useLocation();
-
-      // Check if the current route is "/gallery"
-      const isGalleryRoute = location.pathname === "/gallery";
 
     return ( 
-        <footer className={ isGalleryRoute ? "footer gallery-footer" : "footer"}>
+        <footer className="footer">
             <div className="container grid">
                 
                 <Link className="logo">

@@ -18,41 +18,39 @@ const Gallery = () => {
   return ( 
       <article className="gallery">
           <h1 className="gallery__title">Gallery</h1>
-            {
-              GalleryImages.map((gallery) => {
-                return (
-                  <Swiper key={id}
-                    // install Swiper modules
-                    slidesPerView={1}
-                    spaceBetween={50}
-                    loop={true}
-                    zoom={true}
-                    navigation
-                    keyboard={{
-                      enabled: true,
-                    }}
-                    modules={[Keyboard, Navigation, Pagination, Scrollbar, A11y, EffectCards]} effect="cards" 
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                  >
-                    {
-                      gallery.map((item) => {
-                        const imgURL = item.imgURL;
-                        const imgAlt = item.imgAlt;
-                        id++;
-                        return (
-                          <SwiperSlide key={id}>
-                            <img src={imgURL} alt={imgAlt} />
-                          </SwiperSlide>
-                        )
-                      })
-                    }
-            
-                  </Swiper>
-                )
-            })
-          }
-                  
+              {
+                GalleryImages.map((gallery) => {
+                  return (
+                    <Swiper key={id}
+                      // install Swiper modules
+                      slidesPerView={1}
+                      spaceBetween={50}
+                      loop={true}
+                      zoom={true}
+                      navigation
+                      keyboard={{
+                        enabled: true,
+                      }}
+                      modules={[Keyboard, Navigation, Pagination, A11y, EffectCards]} effect="cards"
+                      pagination={{ clickable: true }}
+                    >
+                      {
+                        gallery.map((item) => {
+                          const imgURL = item.imgURL;
+                          const imgAlt = item.imgAlt;
+                          id++;
+                          return (
+                            <SwiperSlide key={id}>
+                              <img src={imgURL} alt={imgAlt} />
+                            </SwiperSlide>
+                          )
+                        })
+                      }
+              
+                    </Swiper>
+                  )
+              })
+            }                  
       </article>
    );
 }

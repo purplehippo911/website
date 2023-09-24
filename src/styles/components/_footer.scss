@@ -5,6 +5,7 @@
     background: $Black;
     padding:1rem;
     position: relative;
+    margin-top: 8rem;
     .grid {
       grid-template-columns: 1fr 2fr;
       justify-items: normal;
@@ -61,8 +62,3 @@
       }
     }
   }
-
-  .gallery-footer {
-    bottom: -210px;
-  }
-  

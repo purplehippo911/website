@@ -3,27 +3,41 @@
 .gallery__title {
     grid-column: 1/-1;
     justify-self: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    align-self: center;
 }
 
 // styling the slider
 .swiper {
-    padding:5rem !important;
-    width: 100%;
-    background:$Black;
+    width: 90%;
+    display: flex !important;
+    background:$Yellow;
     border-radius: 12px;
-    grid-auto-flow: dense;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: $Black 0px 3px 8px;
+    justify-items: center;
 
+    @media screen and (min-width:600px){
+        grid-column: span 3;
+        width: 65%;
+        padding:3rem !important;
+    }
 
-    @media screen and (min-width:810px){
+    @media screen and (min-width: 1400px) {
         grid-column: span 2;
+        width: 95%;
+        padding: 3.5rem !important;
     }
 }
 
 .swiper-wrapper {
     margin:auto;
-    display: flex;
-    align-items: flex-start;
+    height: auto !important;
+    align-items: center;
+    &:hover {
+        scale: 1.05;
+    }
 }
 
 .swiper-slide {
@@ -38,4 +52,23 @@
     margin:2rem;
     color: $White !important; 
     text-shadow: 0 0 3px $Black, 0 0 5px $Black;
+
+    &:hover {
+        scale: 1.3;
+    }
+}
+
+.swiper-pagination-bullets {
+    scale: 1.3;
+    .swiper-pagination-bullet {
+        &:hover {
+            scale: 1.3;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background: $White !important;
+    }
+    @media screen and (min-width: 600px) {
+        padding: .5rem !important;
+    }
 }
