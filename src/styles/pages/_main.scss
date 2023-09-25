@@ -100,9 +100,41 @@
     width:100%;
     padding:0 100px;
     margin:0 auto;
-    margin-bottom:5rem;
     background:$Black;
     color:$White;
-    text-align: center;
+
+    .card__title {
+        font-size: 3rem;
+    }
+
+    .col-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    }
+    .col-second {
+        background: $Yellow;
+        color: $White;
+        height: auto;
+        padding: 1rem;
+        width: auto;
+        justify-items: center;
+        .row {
+            gap: 3rem;
+            p {
+                color:inherit;
+                margin-right: auto;
+            }
+        }
+        .col {
+            width:auto;
+            margin-left:0;
+            ul {
+                margin:0;
+                padding: 0 1.5rem;
+                li {
+                    opacity:.7;
+                }
+            }
+        }
+    }
 }
 

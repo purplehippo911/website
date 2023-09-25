@@ -1,18 +1,12 @@
 import "../styles/pages/_main.scss";
 
-const Card = ({ id, sectionTitle, mainContent }) => {
+const Card = ({ sectionTitle, mainContent }) => {
    
         return ( 
-            <section className="card" id={id}>
-                <div className="container row">
-                    <div className="col">
-                        <h2 className="card__title">{sectionTitle}</h2>
-                        <p className="card__info">
-                            { mainContent }
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <div className="content">
+                <h1>{sectionTitle}</h1>
+                <h1>{mainContent}</h1>
+            </div>
          );  
 }
  
