@@ -14,14 +14,19 @@ const Home = () => {
                         <p className="hero__info">
                             I am an enthusiastic self-taught web developer and graphic designer.
                         </p>
-                        <a className="hero__button btn" href="#card">Check me out</a>
+                        <a className="hero__button btn" href="#about-me">Check me out</a>
                     </div>
                     <figure className="hero__picture">
                         <img src="/assets/icons/shyguy.jpg" alt="my profile picture" />
                     </figure>
                 </div>
             </article>
-            <article className="card">
+            {/* <article>
+                <div className="container grid">
+
+                </div>
+            </article> */}
+            <article className="card" id="about-me">
                 <div className="container grid">
                     <h2 className="card__title"> About Me </h2>
                     <div className="col-wrapper grid">
