@@ -30,10 +30,6 @@
         outline:10px solid $Yellow;
     }
 
-    img {
-        height: 100%;
-    }
-
     &:hover .gallery__item__overlay {
         display:block;
     }
