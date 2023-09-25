@@ -17,6 +17,14 @@ import "../styles/components/_header.scss";
         }
       }, [isDropdownOpen]);
 
+      const [isDropdown, setIsDropdown] = useState(false);
+
+      function dropdownToggle() {
+        if(isDropdown == false)
+          setIsDropdown(true)
+        else if(isDropdown == true)
+          setIsDropdown(false)
+      }
     return ( 
       <header>
         <div className="container row">
