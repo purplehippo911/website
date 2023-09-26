@@ -17,15 +17,10 @@ const Home = () => {
                         <a className="hero__button btn" href="#about-me">Check me out</a>
                     </div>
                     <figure className="hero__picture">
-                        <img src="/assets/icons/shyguy.jpg" alt="my profile picture" />
+                        <img src="/assets/icons/MuggieYellow.webp" alt="my profile picture" />
                     </figure>
                 </div>
             </article>
-            {/* <article>
-                <div className="container grid">
-
-                </div>
-            </article> */}
             <article className="card" id="about-me">
                 <div className="container grid">
                     <h2 className="card__title"> About Me </h2>
@@ -61,6 +56,29 @@ const Home = () => {
                     </div>
                 </div>
             </article>            
+            <article className="card card2">
+                <div className="container col">
+                    <h2 className="card__title">Education</h2>
+                    <div className="row">
+                        <div className="col">
+                            <div className="col">
+                                <strong>2019 - ~</strong>
+                                <h3>Self-taught Developer</h3>
+                            </div>
+                            <div className="col">
+                                <strong>2023 - ~</strong>
+                                <h3>Elvebakken Upper Secondary School</h3>
+                                <strong>IT and media</strong>
+                            </div>
+                        </div>
+
+                        <picture className="col">
+                            <img src="/assets/images/education__img.png" alt="Picture of people graduating from school." />
+                        </picture>
+                    </div>
+
+                </div>
+            </article>
         </article>
     );
 }

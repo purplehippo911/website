@@ -98,10 +98,15 @@
 
 .card {
     width:100%;
-    padding:0 100px;
+    padding:5rem 2rem;
     margin:0 auto;
+    margin-bottom: 2rem;
     background:$Black;
     color:$White;
+
+    h3 {
+        margin: 0;
+    }
 
     .card__title {
         font-size: 3rem;
@@ -135,6 +140,24 @@
                 }
             }
         }
+    }
+}
+
+.card2 {
+    padding: 2.5rem;
+    h2 {
+        margin: auto;
+        font-size: 200em;
+    }
+    .col h3 {
+        color: $Yellow;
+    }
+
+    .col {
+        padding:2rem;
+    }
+    picture.col img {
+        height: auto;
     }
 }
 
