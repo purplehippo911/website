@@ -15,7 +15,7 @@
     display: flex !important;
     background:$Yellow;
     border-radius: 12px;
-    box-shadow: $Black 0px 3px 8px;
+    box-shadow: $lightBoxShadow;
     justify-items: center;
 
     @media screen and (min-width:600px){

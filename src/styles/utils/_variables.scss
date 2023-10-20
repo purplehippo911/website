@@ -1,5 +1,10 @@
-// variables
+// colors
 $Yellow: #ffc600;
 $Black: #272727;
 $White: #ffffff;
 $Purple: #646cff;
+
+// box-shadows
+$lightBoxShadow: 0px 3px 8px $Black;
+$heavyBoxShadow: 10px 12px $Black;
+$giantBoxShadow:$Black 10px 13px 10px 5px;

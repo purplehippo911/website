@@ -40,6 +40,10 @@
           padding: 0.3em;
           background: white;
 
+          &:hover {
+            outline: 5px solid $Yellow;
+          }
+
           @media screen and (min-width:1000px) {
             padding:0.8rem;
             width: 15%;

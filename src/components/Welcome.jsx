@@ -23,7 +23,7 @@ const Welcome = () => {
     }, [])
 
     return ( 
-      <button className="greeting" onClick={useGreeting}>
+      <button className="greeting btn" onClick={useGreeting}>
           <h2 className="greeting__text"> {greetingText} </h2>
           <a href="#" className="flags">
               <strong className="flag">{flag} </strong>

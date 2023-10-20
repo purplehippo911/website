@@ -190,6 +190,10 @@ nav {
       padding: 0.3em;
       background: white;
 
+      &:hover {
+        outline: 5px solid $Yellow;
+      }
+
       @media screen and (max-width:800px) {
         padding: 0.6rem;
         width: 15%;
@@ -205,14 +209,3 @@ nav {
     }
     
   }
-
-.quote {
-    display:flex;
-    justify-content:center;
-    text-align: center;
-    width:100%;
-    padding:.5rem;
-    margin-top:2rem;
-    color:$White;
-    background:$Yellow;
-}

@@ -22,10 +22,16 @@ const Advice = () => {
     })
 
     return ( 
-        <div className="quoteDiv">
-         { isPending && <div>Loading advice...</div>  }
-         { adviceSlip && <em className="quote">{adviceSlip}</em>}
-        </div>
+        <section className="advice-section">
+           
+            <div className="quoteDiv">
+                <h2>Advice of the day</h2>
+                { isPending && <p>Loading advice...</p>  }
+                { adviceSlip && 
+                    <em className="quote">{adviceSlip}</em>
+                }
+            </div>
+        </section>
 
      );
 }

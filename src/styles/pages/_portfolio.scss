@@ -24,7 +24,7 @@
     position: relative;
     color:$Yellow;
     outline:10px solid $Black;
-    box-shadow: $Black 10px 13px 10px 5px;
+    box-shadow: $giantBoxShadow;
     grid-column: span 2;
     &:hover {
         outline:10px solid $Yellow;

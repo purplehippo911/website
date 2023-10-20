@@ -89,7 +89,7 @@ import "../styles/components/_header.scss";
                       <img src="../assets/icons/twitter.svg" alt="Check me out on Twitter" className="twitter"/>
                   </a>
                   <a href="mailto:muggie@duck.com" target="_blank" className="social-links__item btn">
-                      <img src="../assets/icons/email.png/" alt="email icon" />
+                      <img src="../assets/icons/email.webp" alt="email icon" />
                   </a>
               </section>
 

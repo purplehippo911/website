@@ -18,6 +18,7 @@
 *, *::before, *::after {
     box-sizing:border-box;
     font-family: 'Lato', sans-serif;
+    border:0;
 }
 
 html {
@@ -110,22 +111,23 @@ p {
     margin: 0;
 }
 
-button, .btn {
-    border-radius: 8px;
-    outline: 1px solid transparent;
+.btn {
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background: $Yellow;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
     text-align: center;
-  }
-  .btn:hover {
-    outline:5px solid $Yellow;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    box-shadow: $lightBoxShadow;
+    border-radius: 8px;
+    outline: 2px solid $Black;
+    color: $Black;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      outline:2px solid $Yellow;
+      scale:1.05;
+      background: $White;
+      color:$Yellow;
+    }
   }
