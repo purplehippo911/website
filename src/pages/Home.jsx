@@ -125,7 +125,7 @@ const Home = () => {
                         </div>
 
                         <picture className="col">
-                            <img src="/assets/images/education__img.png" alt="Picture of people graduating from school." />
+                            <img src="/assets/images/educationImage.webp" alt="Picture of people graduating from school." />
                         </picture>
                     </div>
 

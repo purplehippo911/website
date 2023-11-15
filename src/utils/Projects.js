@@ -81,7 +81,7 @@ const Projects = [
     {
         title: "Bookmark Landing Page",
         url: "https://bookmark-kudos.netlify.app/",
-        imgURL: "https://github.com/kenghtt/bookmark-landing-page/raw/main/public/design/Screenshot_desktop.png",
+        imgURL: "../assets/screenshots/bookmark.png",
         imgAlt: "A bookmark landing page challenge. Collaboration with Kenghtt.",
         githubRepo:"https://www.github.com/kenghtt/bookmark-landing-page"
     },

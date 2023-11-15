@@ -18,6 +18,9 @@ const Footer = () => {
                     <a href="https://twitter.com/muggie43/" target="_blank" className="social-links__item btn">
                         <img src="../assets/icons/twitter.svg" alt="Check me out on Twitter" className="twitter"/>
                     </a>
+                    <a href="https://www.linkedin.com/in/omerabadula" target="_blank" className="social-links__item btn">
+                        <img src="../assets/icons/linkedinIcon.png/" alt="my linkedIn profile" />
+                    </a>
                     <a href="mailto:muggie@duck.com" target="_blank" className="social-links__item btn">
                         <img src="../assets/icons/email.webp/" alt="email icon" />
                     </a>
