@@ -1,12 +1,16 @@
 @import "../utils/variables";
 
 .hero-section {
-    padding:7rem 0;
+    padding:0rem 0;
     background:$White;
     box-shadow: $lightBoxShadow;
     min-height: 80vh;
     .row {
-        gap: 4rem;
+        
+        align-items: center;
+        @media screen and (min-width: 800px) {
+            gap: 4rem;  
+        }
     }
     .greeting {
         border-radius:1rem;
@@ -15,7 +19,7 @@
         display:flex;
         align-items: center;
         gap:2rem;
-        margin-bottom: 2rem;
+        margin-bottom: .3rem;
         
         .greeting__text, flags {
             width:100%;
@@ -25,7 +29,12 @@
         .flags {
             font-size: 1.7em;
         }
-    
+
+        
+    }
+    .greeting__info {
+        font-size: 14px;
+        margin-left:3rem;
     }
 
     .hero__button {
@@ -42,6 +51,7 @@
     }
 
     .hero__picture {
+        scale: .8;
         width:auto;
         justify-content: center;
         img {
@@ -160,11 +170,12 @@
 .card-introduction {
     display: flex;
     min-height: 90vh;
+    padding: 3.5em;
     .col {
         align-self: center;
     }
     .grid {
-        gap:5rem;
+        gap:4rem;
         // grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
         grid-template-areas: 
         "info-text picture"
@@ -211,9 +222,24 @@
     padding: 2.5rem 0;
     .swiper {
         width: 80%;
+        margin-top: 2rem;
+
+        .swiper-wrapper:hover {
+            scale: 1;
+        }
+
+        .swiper-button-prev {
+            margin-left:0.5rem;
+        }
+
+        .swiper-button-next {
+            margin-right: .5rem;
+        }
+        
 
         .swiper-slide {
             display: flex;
+            align-items: center;
             h3 {
                 font-size: 2em;
             }
@@ -225,11 +251,39 @@
 }
 
 .card-about-me {
-    height: auto;
+
+    .card__info {
+        font-size: 1.5rem;
+    }
     
 }
 
 .card-education {
+    .card__title__education {
+        margin-bottom: 2rem;
+    }
+
+    .row {
+        @media screen and (max-width: 800px){
+            text-align: center;
+            gap: 2rem;
+        }
+    }
+    picture {
+        @media screen and (max-width: 800px){
+            order: 2;
+
+            img {
+                height: 20rem;
+                width: 20rem;
+                margin: 0 auto;
+            }
+        }
+        img {
+            height: 80%;
+            border-radius: 50%;
+        }
+    } 
     .education-section {
         display: flex;
         justify-content: center;
@@ -244,12 +298,16 @@
             opacity: .7;
             font-style: italic;
         }
-        img {
-            height: 80%;
-        }
     }
     
     picture.col img {
         height: auto;
     }
+}
+
+.skills__video-editing {
+    background: $Black;
+    align-items: center;
+    width:80%; 
+    outline: 0;
 }

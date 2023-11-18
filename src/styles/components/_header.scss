@@ -43,9 +43,7 @@ header {
     align-items: center;
     gap:1rem; 
 
-    &:hover {
-        scale:1.1;
-        
+    &:hover {        
         &::after{
             color: $Yellow;
         }
@@ -61,7 +59,6 @@ header {
    color:$White;
    font-weight: 700;
    font-size:1.5em;
-   
 }
 
 nav {
