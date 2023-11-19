@@ -27,7 +27,7 @@ const Home = () => {
                         <Welcome/>
                         <h1 className="hero__title"> I'm Omer</h1>
                         <p className="hero__info">
-                            I am an enthusiastic self-taught web developer and graphic designer.
+                            I am an enthusiastic self-taught web developer, video editor and graphic designer.
                         </p>
                         <a className="hero__button btn" href="#card-introduction">Check me out</a>
                     </div>
