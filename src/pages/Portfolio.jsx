@@ -17,7 +17,7 @@ const Portfolio = () => {
                     </a>
                     <div className="gallery__item__overlay">
                         <div className="container row">
-                            <a href={url}>
+                            <a href={url} target="_blank">
                               <h2>{title}</h2>
                               <p>{imgAlt}</p>
                             </a>

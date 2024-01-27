@@ -32,8 +32,8 @@ const Home = () => {
                         <a className="hero__button btn" href="#card-introduction">Check me out</a>
                     </div>
                     <picture className="hero__picture col">
-                        <img src="/assets/images/mainProfilePic.jpeg" alt="my profile picture" />
                     </picture>
+                        <img src="/assets/images/ProfilePic 4.jpeg" alt="my profile picture" style={{maxWidth:500, maxHeight:500, borderRadius:50}}/>
                 </div>
             </article>
                      
@@ -155,7 +155,7 @@ const Home = () => {
                             </p>
                         </section>
                             <picture>
-                                <img src="/assets/images/profilePic2.jpg" alt="another picture of me" />
+                                <img src="/assets/images/profilePic 3.jpeg" alt="my profile picture" style={{width:200, borderRadius:50}}/>
                             </picture>
                     </div>
                 </div>
